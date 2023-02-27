@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { FiMenu, FiX } from "react-icons/fi";
 
@@ -12,7 +12,7 @@ type NavLink = {
 
 const links: NavLink[] = [
   { name: "About", url: "#about" },
-  { name: "Projects", url: "#projects" },
+  { name: "Work", url: "#work" },
   { name: "Tools", url: "#tools" },
 ];
 
@@ -23,8 +23,34 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const [isSolid, setIsSolid] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsSolid(true);
+      } else {
+        setIsSolid(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToSection = (id: string): void => {
+    const section = document.querySelector<HTMLElement>(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <nav className="z-50 w-full bg-gray-100 dark:bg-gray-800 p-5">
+    <nav
+      className={`p-5 ${
+        isSolid ? "bg-gray-200 dark:bg-gray-800" : "bg-transparent"
+      }`}
+    >
       <div className="flex items-center justify-between flex-wrap">
         <div className="flex items-center flex-shrink-0 text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-gray-300 mr-6">
           <span className="font-semibold text-xl tracking-tight">
@@ -52,13 +78,14 @@ const Navbar = () => {
         >
           <div className="text-sm lg:flex-grow">
             {links.map((link) => (
-              <Link
+              <button
                 key={link.name}
                 className="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-gray-300 ml-4"
-                href={link.url}
+                // href={link.url}
+                onClick={(e) => scrollToSection(link.url)}
               >
                 {link.name}
-              </Link>
+              </button>
             ))}
           </div>
         </div>

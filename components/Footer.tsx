@@ -7,15 +7,20 @@ import Link from "next/link";
 
 const Footer = () => {
   const [mounted, setMounted] = useState(false);
-  const { setTheme, resolvedTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => setMounted(true), []);
 
   if (!mounted) return null;
 
+  const handleThemeChange = (event: any) => {
+    console.log(event.target.value);
+    setTheme(event.target.value);
+  };
+
   return (
-    <footer className="flex flex-col md:flex-row items-center justify-between bg-gray-100 dark:bg-gray-800 py-3 px-5">
-      <div className="flex justify-center md:justify-start my-4">
+    <footer className="flex flex-col md:flex-row items-center bg-gray-200 justify-between dark:bg-transparent py-3 px-5">
+      <div className="flex justify-center md:justify-start">
         <div>
           <a
             className="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-gray-300"
@@ -40,24 +45,24 @@ const Footer = () => {
         </div>
         <div className="mx-4">
           <select
-            value={resolvedTheme}
-            onChange={(e) => setTheme(e.target.value)}
-            className="bg-gray-300 text-gray-700 dark:bg-gray-900 dark:text-white rounded-md p-1"
+            value={theme}
+            onChange={handleThemeChange}
+            className="bg-gray-200 text-gray-700 dark:bg-transparent dark:text-white border border-gray-400 rounded-md"
           >
-            <option value="system" className="bg-gray-300 dark:bg-gray-800">
-              System
-            </option>
-            <option value="dark" className="bg-gray-300 dark:bg-gray-800">
+            <option value="dark" className="bg-gray-200 dark:bg-gray-800">
               Dark
             </option>
-            <option value="light" className="bg-gray-300 dark:bg-gray-800">
+            <option value="light" className="bg-gray-200 dark:bg-gray-800">
               Light
+            </option>
+            <option value="system" className="bg-gray-200 dark:bg-gray-800">
+              System
             </option>
           </select>
         </div>
       </div>
       <div className="text-center md:text-left my-4">
-        <p className="text-sm text-gray-700  dark:text-white">
+        <p className="text-sm text-gray-700 dark:text-white">
           &copy; {new Date().getFullYear()} Daniel Schuster. All Rights
           Reserved.
         </p>
@@ -68,7 +73,7 @@ const Footer = () => {
           href="/legal-notice"
         >
           <p className="text-sm"></p>
-          Impressum
+          Legal Notice
         </Link>
       </div>
     </footer>

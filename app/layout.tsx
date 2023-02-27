@@ -1,3 +1,5 @@
+"use client";
+
 import CustomThemeProvider from "@/components/CustomThemeProvider";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -13,15 +15,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body>
-        <CustomThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-        >
-          <div className="flex flex-col min-h-screen mx-auto">
-            <Navbar />
-            <main className="flex-1">{children}</main>
-            <div className="shrink-0">
+        <CustomThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <div className="flex flex-col min-h-screen">
+            <div className="sticky top-0 z-50">
+              <Navbar />
+            </div>
+            <main className="flex-grow">{children}</main>
+            <div className="shrink-0 z-50">
               <Footer />
             </div>
           </div>
