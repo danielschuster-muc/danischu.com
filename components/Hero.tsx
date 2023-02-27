@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 const words = ["creative", "endurance", "passionate"];
 
-export default function Hero() {
+const Hero = () => {
   const [wordIndex, setWordIndex] = useState(0);
 
   const [isVisible, setIsVisible] = useState(true);
@@ -26,8 +26,8 @@ export default function Hero() {
   const word3 = words[(wordIndex + 2) % words.length];
 
   return (
-    <header className="h-screen w-full bg-gradient-to-tr from-gray-900 to-blue-900 flex flex-col items-center justify-center">
-      <h1 className="text-white text-4xl font-bold mb-4">
+    <header className="h-screen w-full bg-gradient-to-tr from-gray-900 to-blue-900 flex flex-col items-center justify-center text-center">
+      <h1 className="text-white text-5xl font-bold mb-4">
         Hello, I&apos;m{" "}
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-green-400">
           Daniel Schuster.
@@ -42,4 +42,6 @@ export default function Hero() {
       </h2>
     </header>
   );
-}
+};
+
+export default Hero;

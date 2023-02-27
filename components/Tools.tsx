@@ -1,5 +1,7 @@
 import React from "react";
 
-export default function Tools() {
+const Tools = () => {
   return <div>Tools</div>;
-}
+};
+
+export default Tools;
