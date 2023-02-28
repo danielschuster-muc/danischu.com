@@ -6,7 +6,6 @@ import Work from "@/components/Work";
 const Home = () => {
   return (
     <>
-      <a href="#">Test</a>
       <Hero />
       <About />
       <Work />

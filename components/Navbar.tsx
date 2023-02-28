@@ -11,9 +11,9 @@ type NavLink = {
 };
 
 const links: NavLink[] = [
-  { name: "About", url: "#about" },
-  { name: "Work", url: "#work" },
-  { name: "Tools", url: "#tools" },
+  { name: "About", url: "/#about" },
+  { name: "Work", url: "/#work" },
+  { name: "Tools", url: "/#tools" },
 ];
 
 const Navbar = () => {
@@ -35,13 +35,6 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const scrollToSection = (id: string): void => {
-    const section = document.querySelector<HTMLElement>(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <nav
@@ -75,14 +68,13 @@ const Navbar = () => {
       >
         <div className="text-sm lg:flex-grow">
           {links.map((link) => (
-            <button
+            <a
               key={link.name}
               className="block mt-4 lg:inline-block lg:mt-0 ml-4"
-              // href={link.url}
-              onClick={(e) => scrollToSection(link.url)}
+              href={link.url}
             >
               {link.name}
-            </button>
+            </a>
           ))}
         </div>
       </div>
