@@ -13,13 +13,9 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <body>
         <CustomThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <div className="flex flex-col min-h-screen">
-            <div className="sticky top-0 z-50">
-              <Navbar />
-            </div>
+            <Navbar />
             <main className="flex-grow">{children}</main>
-            <div className="shrink-0 z-50">
-              <Footer />
-            </div>
+            <Footer />
           </div>
         </CustomThemeProvider>
       </body>

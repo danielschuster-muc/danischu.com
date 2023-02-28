@@ -19,11 +19,10 @@ const Footer = () => {
   };
 
   return (
-    <footer className="flex flex-col md:flex-row items-center bg-gray-200 justify-between dark:bg-transparent py-3 px-5">
+    <footer className="shrink-0 z-50 flex flex-col md:flex-row items-center justify-between dark:bg-transparent py-3 px-5">
       <div className="flex justify-center md:justify-start">
-        <div>
+        <div className="">
           <a
-            className="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-gray-300"
             href="https://github.com/danielschuster-muc"
             target="_blank"
             rel="noreferrer"
@@ -34,7 +33,6 @@ const Footer = () => {
         </div>
         <div className="mx-4">
           <a
-            className="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-gray-300"
             href="https://www.linkedin.com/in/danielschuster-muc/"
             target="_blank"
             rel="noreferrer"
@@ -47,34 +45,30 @@ const Footer = () => {
           <select
             value={theme}
             onChange={handleThemeChange}
-            className="bg-gray-200 text-gray-700 dark:bg-transparent dark:text-white border border-gray-400 rounded-md"
+            className="border border-gray-300 rounded-md"
           >
-            <option value="dark" className="bg-gray-200 dark:bg-gray-800">
+            <option value="dark" className="bg-gray-300 dark:bg-gray-900">
               Dark
             </option>
-            <option value="light" className="bg-gray-200 dark:bg-gray-800">
+            <option value="light" className="bg-gray-300 dark:bg-gray-900">
               Light
             </option>
-            <option value="system" className="bg-gray-200 dark:bg-gray-800">
+            <option value="system" className="bg-gray-300 dark:bg-gray-900">
               System
             </option>
           </select>
         </div>
       </div>
       <div className="text-center md:text-left my-4">
-        <p className="text-sm text-gray-700 dark:text-white">
+        <p className="text-sm">
           &copy; {new Date().getFullYear()} Daniel Schuster. All Rights
           Reserved.
         </p>
       </div>
       <div className="text-center md:text-right ml-4">
-        <Link
-          className="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-gray-300"
-          href="/legal-notice"
-        >
-          <p className="text-sm"></p>
-          Legal Notice
-        </Link>
+        <p className="text-sm">
+          <Link href="/legal-notice">Legal Notice</Link>
+        </p>
       </div>
     </footer>
   );

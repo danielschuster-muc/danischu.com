@@ -47,47 +47,45 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`p-5 ${
-        isSolid ? "bg-gray-200 dark:bg-gray-800" : "bg-transparent"
+      className={`sticky top-0 z-50 p-5 flex items-center justify-between flex-wrap ${
+        isSolid ? "shadow backdrop-blur-xl bg-white/80 dark:bg-gray-900" : ""
       }`}
     >
-      <div className="flex items-center justify-between flex-wrap">
-        <div className="flex items-center flex-shrink-0 text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-gray-300 mr-6">
-          <span className="font-semibold text-xl tracking-tight">
-            <Link href="/">Daniel Schuster</Link>
-          </span>
-        </div>
-        <div className="block lg:hidden">
-          <button
-            type="button"
-            className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-            onClick={toggleMenu}
-          >
-            <span className="sr-only">Open main menu</span>
-            {menuOpen ? (
-              <FiX className="block h-6 w-6" aria-hidden="true" />
-            ) : (
-              <FiMenu className="block h-6 w-6" aria-hidden="true" />
-            )}
-          </button>
-        </div>
-        <div
-          className={`${
-            menuOpen ? "block" : "hidden"
-          } w-full block flex-grow-1 lg:flex lg:items-center lg:w-auto`}
+      <div className="flex items-center flex-shrink-0 mr-6">
+        <span className="font-semibold text-xl tracking-tight">
+          <Link href="/">Daniel Schuster</Link>
+        </span>
+      </div>
+      <div className="block lg:hidden">
+        <button
+          type="button"
+          className="inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+          onClick={toggleMenu}
         >
-          <div className="text-sm lg:flex-grow">
-            {links.map((link) => (
-              <button
-                key={link.name}
-                className="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-gray-300 ml-4"
-                // href={link.url}
-                onClick={(e) => scrollToSection(link.url)}
-              >
-                {link.name}
-              </button>
-            ))}
-          </div>
+          <span className="sr-only">Open main menu</span>
+          {menuOpen ? (
+            <FiX className="block h-6 w-6" aria-hidden="true" />
+          ) : (
+            <FiMenu className="block h-6 w-6" aria-hidden="true" />
+          )}
+        </button>
+      </div>
+      <div
+        className={`${
+          menuOpen ? "block" : "hidden"
+        } w-full block flex-grow-1 lg:flex lg:items-center lg:w-auto`}
+      >
+        <div className="text-sm lg:flex-grow">
+          {links.map((link) => (
+            <button
+              key={link.name}
+              className="block mt-4 lg:inline-block lg:mt-0 ml-4"
+              // href={link.url}
+              onClick={(e) => scrollToSection(link.url)}
+            >
+              {link.name}
+            </button>
+          ))}
         </div>
       </div>
     </nav>
