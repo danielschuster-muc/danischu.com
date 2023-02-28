@@ -26,12 +26,10 @@ const Navbar = () => {
   const [isSolid, setIsSolid] = useState<boolean>(false);
 
   useEffect(() => {
+    setIsSolid(window.pageYOffset > 0);
+
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsSolid(true);
-      } else {
-        setIsSolid(false);
-      }
+      setIsSolid(window.pageYOffset > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
