@@ -11,7 +11,11 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
     <html lang="en" suppressHydrationWarning>
       <head />
       <body>
-        <CustomThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+        <CustomThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+        >
           <div className="flex flex-col min-h-screen">
             <Navbar />
             <main className="flex-grow">{children}</main>
