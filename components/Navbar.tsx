@@ -40,7 +40,7 @@ const Navbar = () => {
     <nav
       className={`sticky top-0 z-50 p-5 flex items-center justify-between flex-wrap ${
         isSolid
-          ? "shadow opacity-95 filter backdrop-blur-xl bg-white/80 dark:bg-[#8f94fb]"
+          ? "shadow opacity-95 filter backdrop-blur-xl bg-gradient-to-tr from-[#eef5ff] to-[#f9ffeb] dark:from-[#4e54c8] dark:to-[#8f94fb]"
           : ""
       }`}
     >

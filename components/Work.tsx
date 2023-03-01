@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { RefObject, useEffect, useRef, useState } from "react";
+import React from "react";
 
 import { HiArrowRight } from "react-icons/hi";
 
@@ -41,45 +41,10 @@ const projects = [
 ];
 
 const Work = () => {
-  const divRef: RefObject<HTMLDivElement> = useRef(null);
-  const [isVisible, setIsVisible] = useState<boolean>(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (divRef.current) {
-        const top = divRef.current.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-        // Calculate the scale based on the scroll position
-        const scale = Math.max(
-          0,
-          Math.min(1, (windowHeight - top) / windowHeight)
-        );
-        const scaleFactor = 0.5 + scale * 0.5; // Scale between 0.5 and 1
-
-        // Set the scale of the div, with a minimum scale of 0.8
-        const minScale = 0.8;
-        divRef.current.style.transform = `scale(${
-          minScale + (scaleFactor - minScale) * scale
-        })`;
-
-        setIsVisible(scale > 0);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <section id="work">
       <div
-        ref={divRef}
-        className={`bg-orange-50 dark:bg-gray-700 py-20 md:py-5 rounded-lg transition duration-1500 ease-in-out ${
-          isVisible ? "opacity-100" : "opacity-0"
-        }`}
+        className="bg-lime-50 dark:bg-indigo-600 py-20 md:py-5 transition duration-1500 ease-in-out"
         style={{ willChange: "transform" }}
       >
         <div className="container mx-auto px-10">
