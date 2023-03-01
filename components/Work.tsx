@@ -49,7 +49,6 @@ const Work = () => {
       if (divRef.current) {
         const top = divRef.current.getBoundingClientRect().top;
         const windowHeight = window.innerHeight;
-        const scrollPosition = window.scrollY;
 
         // Calculate the scale based on the scroll position
         const scale = Math.max(
@@ -58,7 +57,7 @@ const Work = () => {
         );
         const scaleFactor = 0.5 + scale * 0.5; // Scale between 0.5 and 1
 
-        // Set the scale of the div, with a minimum scale of 0.7
+        // Set the scale of the div, with a minimum scale of 0.8
         const minScale = 0.8;
         divRef.current.style.transform = `scale(${
           minScale + (scaleFactor - minScale) * scale
@@ -84,9 +83,11 @@ const Work = () => {
         style={{ willChange: "transform" }}
       >
         <div className="container mx-auto px-10">
-          <div className="text-center p-10 container px-20 text-gray-700 dark:text-white">
-            <h2 className="text-3xl font-bold">Work</h2>
-            <p>
+          <div className="text-center p-10 container px-20 ">
+            <h2 className="text-4xl font-bold text-gray-700 dark:text-white">
+              Work.
+            </h2>
+            <p className="text-gray-500 dark:text-gray-300">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
               veritatis. Dolores aut qui, at dolorum vel a quo fugiat blanditiis
               rem fuga officia ipsa labore ipsam facere, veniam, repellendus
