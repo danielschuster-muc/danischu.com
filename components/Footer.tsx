@@ -45,7 +45,7 @@ const Footer = () => {
           <select
             value={theme}
             onChange={handleThemeChange}
-            className="border border-gray-300 rounded-md"
+            className="border border-gray-300 rounded-md dark:bg-[#4e54c8]"
           >
             <option value="dark" className="bg-gray-300 dark:bg-gray-900">
               Dark
