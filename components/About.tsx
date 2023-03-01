@@ -63,10 +63,10 @@ const About = () => {
                     <h3 className="text-lg font-bold text-gray-900 dark:text-white">
                       {e.title}
                     </h3>
-                    <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    <time className="block mb-2 text-sm font-normal leading-none text-gray-500 dark:text-gray-400">
                       {e.date}
                     </time>
-                    <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+                    <p className="text-base font-normal text-gray-600 dark:text-gray-300">
                       {e.description}
                     </p>
                   </div>
@@ -89,7 +89,7 @@ const About = () => {
               <h3 className="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                 Who is this guy?
               </h3>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              <p className="mb-3 font-normal text-gray-500 dark:text-gray-300">
                 Lorem ipsum dolor, iure neque non maxime in quae perspiciatis
                 velit eligendi alias earum, repudiandae facilis asperiores
                 quisquam aspernatur!
