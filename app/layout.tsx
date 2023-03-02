@@ -9,9 +9,10 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: {
     default: "Home",
-    template: "%s - Daniel Schuster's Portfolio",
+    template: "%s | Daniel Schuster's Portfolio",
   },
-  description: `Portfolio page by Daniel Schuster: about, projects & preferred technologies`,
+  description:
+    "Portfolio page by Daniel Schuster: about, projects & preferred technologies",
   keywords: [
     "danielschuster",
     "portfolio",
