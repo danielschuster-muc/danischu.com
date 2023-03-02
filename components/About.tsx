@@ -20,6 +20,16 @@ const events = [
   },
 ];
 
+// TODO: icons, link to gh and site
+
+const calcAge = (date: Date) => {
+  var ms = Date.now() - date.getTime();
+  var ageDate = new Date(ms);
+  return Math.abs(ageDate.getUTCFullYear() - 1970);
+};
+
+const age = calcAge(new Date(2003, 3, 23));
+
 const About = () => {
   return (
     <section id="about" className="pb-20">
@@ -34,7 +44,7 @@ const About = () => {
                 alt="Portrait of Daniel"
                 priority
                 quality={100}
-                className="grayscale rounded-full h-full w-full"
+                className="grayscale hover:grayscale-0 rounded-full h-full w-full"
               />
             </div>
             <div className="p-5">
@@ -42,9 +52,8 @@ const About = () => {
                 Who is this guy?
               </h3>
               <p className="mb-3 font-normal text-gray-500 dark:text-gray-300">
-                Lorem ipsum dolor, iure neque non maxime in quae perspiciatis
-                velit eligendi alias earum, repudiandae facilis asperiores
-                quisquam aspernatur!
+                I am Daniel, {age} years old, currently studying Computer
+                Science in Munich, Germany.
               </p>
             </div>
           </div>

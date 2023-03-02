@@ -1,18 +1,10 @@
+import { ProjectType } from "@/additional";
 import Image from "next/image";
 import React, { useState } from "react";
 import { HiArrowRight } from "react-icons/hi";
 import Modal from "./Modal";
 
-export default function SingleProject({
-  project,
-}: {
-  project: {
-    title: string;
-    description: string;
-    image: string;
-    summary: string;
-  };
-}) {
+export default function SingleProject({ project }: { project: ProjectType }) {
   const [showModal, setShowModal] = useState<boolean>(false);
 
   return (
@@ -22,19 +14,19 @@ export default function SingleProject({
           onClose={() => setShowModal(false)}
           isVisible={showModal}
           title={project.title}
-          image={project.image}
+          image={project.images[0]}
           description={project.description}
         />
       )}
       <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <Image
           className="rounded-t-lg grayscale hover:grayscale-0"
-          src={project.image}
+          src={project.images[0]}
           alt={`Image of ${project.title}`}
           width="500"
           height="500"
         />
-        <div className="p-5">
+        <div className="p-5 border-b dark:border-gray-600">
           <h3 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
             {project.title}
           </h3>
@@ -49,6 +41,7 @@ export default function SingleProject({
             <HiArrowRight className="ml-2 -mr-1" />
           </button>
         </div>
+        <div className="flex p-5">{project.technologies.join(", ")}</div>
       </div>
     </>
   );

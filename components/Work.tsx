@@ -3,34 +3,38 @@
 import React from "react";
 import SingleProject from "./SingleProject";
 
-const projects = [
+import pd1Img from "@/public/images/potterdb-1.jpg";
+import soImg from "@/public/images/stackoverflown.jpg";
+import portfolioImg from "@/public/images/portfolio-1.jpg";
+import { ProjectType } from "@/additional";
+
+const projects: ProjectType[] = [
   {
-    title: "Project 1",
-    summary: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    image: "https://picsum.photos/1280/720",
+    title: "Potter DB",
+    summary:
+      "An API with data from the Harry Potter Universe: Characters, Movies, Books, Spells and Potions.",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, debitis rerum voluptates pariatur deserunt excepturi incidunt illo voluptatem labore exercitationem unde veniam qui perspiciatis nobis amet minima et velit commodi.",
+    images: [pd1Img.src],
+    technologies: ["react", "ruby on rails", "next.js", "mui"],
   },
   {
-    title: "Project 2",
-    summary: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    image: "https://picsum.photos/1280/720",
+    title: "Stack Overflown",
+    summary:
+      "Stack Overflown is a comical spin on the popular technical Q&A site, Stack Overflow, serving up random jokes and puns to unsuspecting visitors who misspell the URL.",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, debitis rerum voluptates pariatur deserunt excepturi incidunt illo voluptatem labore exercitationem unde veniam qui perspiciatis nobis amet minima et velit commodi.",
+    images: [soImg.src],
+    technologies: ["vue"],
   },
   {
-    title: "Project 3",
-    summary: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    image: "https://picsum.photos/1280/720",
+    title: "Portfolio",
+    summary:
+      "A portfolio page about me, my work and my preferred technologies.",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, debitis rerum voluptates pariatur deserunt excepturi incidunt illo voluptatem labore exercitationem unde veniam qui perspiciatis nobis amet minima et velit commodi.",
-  },
-  {
-    title: "Project 4",
-    summary: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    image: "https://picsum.photos/1280/720",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, debitis rerum voluptates pariatur deserunt excepturi incidunt illo voluptatem labore exercitationem unde veniam qui perspiciatis nobis amet minima et velit commodi.",
+    images: [portfolioImg.src],
+    technologies: ["next.js", "react", "tailwind css"],
   },
 ];
 
