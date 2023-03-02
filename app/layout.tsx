@@ -1,10 +1,27 @@
-"use client";
-
 import CustomThemeProvider from "@/components/CustomThemeProvider";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 import "./globals.css";
+
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    default: "Home",
+    template: "%s - Daniel Schuster's Portfolio",
+  },
+  description: `Portfolio page by Daniel Schuster: about, projects & preferred technologies`,
+  keywords: [
+    "danielschuster",
+    "portfolio",
+    "programming",
+    "website",
+    "developer",
+    "me",
+    "react",
+  ],
+};
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
