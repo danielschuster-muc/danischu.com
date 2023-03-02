@@ -16,6 +16,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           defaultTheme="system"
           enableSystem
         >
+          <div id="modal-root" />
           <div className="flex flex-col min-h-screen">
             <Navbar />
             <main className="flex-grow">{children}</main>

@@ -1,78 +1,64 @@
 import Image from "next/image";
 import React from "react";
+import ReactDOM from "react-dom";
+import { FiX } from "react-icons/fi";
 
-const Modal = ({
+export default function Modal({
   title,
   description,
   image,
-  setIsOpen,
+  onClose,
 }: {
   title: string;
   description: string;
   image: string;
-  setIsOpen: (val: boolean) => void;
-}) => {
-  return (
+  onClose: () => void;
+  isVisible: boolean;
+}) {
+  const handleClose = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (e.target === e.currentTarget) onClose();
+  };
+
+  const modalRoot = document.getElementById("modal-root") as HTMLElement;
+
+  return ReactDOM.createPortal(
     <div
-      className="fixed inset-0 z-50 overflow-y-auto"
-      aria-labelledby="modal-title"
+      className={`fixed inset-0 z-50 backdrop-blur-sm bg-gray-900 bg-opacity-90 transition-opacity transition-300 overflow-x-hidden overflow-y-auto flex justify-center items-center`}
+      aria-labelledby={`Modal of ${title}`}
       role="dialog"
       aria-modal="true"
+      onClick={handleClose}
     >
-      <div
-        className="fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity"
-        onClick={() => setIsOpen(false)}
-      />
-      <div
-        id={`modal-${title}`}
-        className="fixed inset-0 flex justify-center items-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none"
-      >
-        <div className="relative w-full h-full max-w-lg md:h-auto">
-          <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
-            <div className="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
-              <h3 className="text-xl font-medium text-gray-900 dark:text-white">
-                {title}
-              </h3>
-              <button
-                type="button"
-                className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                onClick={() => {
-                  setIsOpen(false);
-                }}
-              >
-                <svg
-                  aria-hidden="true"
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-                <span className="sr-only">Close modal</span>
-              </button>
-            </div>
-            <div className="p-6 space-y-6">
-              <Image
-                className="rounded-lg"
-                src={image}
-                alt={`Image of ${title}`}
-                width="500"
-                height="500"
-              />
-              <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                {description}
-              </p>
-            </div>
+      <div className="relative w-screen max-w-lg h-auto">
+        <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <div className="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+              {title}
+            </h3>
+            <button
+              type="button"
+              className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+              onClick={onClose}
+            >
+              <FiX className="block h-6 w-6" />
+              <span className="sr-only">Close modal</span>
+            </button>
+          </div>
+          <div className="p-6 space-y-6">
+            <Image
+              className="rounded-lg"
+              src={image}
+              alt={`Image of ${title}`}
+              width="500"
+              height="500"
+            />
+            <p className="text-base text-gray-500 dark:text-gray-300">
+              {description}
+            </p>
           </div>
         </div>
       </div>
-    </div>
+    </div>,
+    modalRoot
   );
-};
-
-export default Modal;
+}
