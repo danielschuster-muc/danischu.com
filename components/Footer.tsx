@@ -19,7 +19,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="shrink-0 z-50 flex flex-col md:flex-row items-center justify-between dark:bg-transparent py-3 px-5">
+    <footer className="shrink-0 z-10 flex flex-col md:flex-row items-center justify-between dark:bg-transparent py-3 px-5">
       <div className="flex justify-center md:justify-start">
         <div className="">
           <a
