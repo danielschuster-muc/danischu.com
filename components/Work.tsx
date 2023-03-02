@@ -1,10 +1,6 @@
 "use client";
 
-import Image from "next/image";
-import React, { useState } from "react";
-
-import { HiArrowRight } from "react-icons/hi";
-import Modal from "./Modal";
+import React from "react";
 import SingleProject from "./SingleProject";
 
 const projects = [
