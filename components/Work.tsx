@@ -54,7 +54,7 @@ const Work = () => {
             <h2 className="text-4xl font-bold text-gray-700 dark:text-white">
               Work.
             </h2>
-            <p className="text-gray-500 dark:text-gray-300">
+            <p className="text-gray-500 dark:text-gray-200">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
               veritatis. Dolores aut qui, at dolorum vel a quo fugiat blanditiis
               rem fuga officia ipsa labore ipsam facere, veniam, repellendus
