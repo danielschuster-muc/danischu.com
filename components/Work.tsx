@@ -7,32 +7,28 @@ const projects = [
   {
     title: "Project 1",
     summary: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    image: "https://picsum.photos/1280/720",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, debitis rerum voluptates pariatur deserunt excepturi incidunt illo voluptatem labore exercitationem unde veniam qui perspiciatis nobis amet minima et velit commodi.",
   },
   {
     title: "Project 2",
     summary: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    image: "https://picsum.photos/1280/720",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, debitis rerum voluptates pariatur deserunt excepturi incidunt illo voluptatem labore exercitationem unde veniam qui perspiciatis nobis amet minima et velit commodi.",
   },
   {
     title: "Project 3",
     summary: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    image: "https://picsum.photos/1280/720",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, debitis rerum voluptates pariatur deserunt excepturi incidunt illo voluptatem labore exercitationem unde veniam qui perspiciatis nobis amet minima et velit commodi.",
   },
   {
     title: "Project 4",
     summary: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    image: "https://picsum.photos/1280/720",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, debitis rerum voluptates pariatur deserunt excepturi incidunt illo voluptatem labore exercitationem unde veniam qui perspiciatis nobis amet minima et velit commodi.",
   },
@@ -42,7 +38,7 @@ const Work = () => {
   return (
     <section id="work">
       <div
-        className="bg-lime-50 dark:bg-indigo-600 py-20 md:py-5 transition duration-1500 ease-in-out"
+        className="bg-lime-50 dark:bg-blue-900 py-20 md:py-5 transition duration-1500 ease-in-out"
         style={{ willChange: "transform" }}
       >
         <div className="container mx-auto px-10">

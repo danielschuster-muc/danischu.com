@@ -10,7 +10,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body className="bg-gradient-to-tr from-[#eef5ff] to-[#f9ffeb] dark:from-[#4e54c8] dark:to-[#8f94fb]">
+      <body className="bg-gradient-to-tr from-[#eef5ff] to-[#f9ffeb] dark:from-[#141E30] dark:to-[#2a5298]">
         <CustomThemeProvider
           attribute="class"
           defaultTheme="system"
