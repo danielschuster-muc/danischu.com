@@ -11,17 +11,8 @@ export const metadata: Metadata = {
     default: "Home",
     template: "%s | Daniel Schuster's Portfolio",
   },
-  description:
-    "Portfolio page by Daniel Schuster: about, projects & preferred technologies",
-  keywords: [
-    "danielschuster",
-    "portfolio",
-    "programming",
-    "website",
-    "developer",
-    "me",
-    "react",
-  ],
+  description: "Portfolio page by Daniel Schuster: about, projects & preferred technologies",
+  keywords: ["danielschuster", "portfolio", "programming", "website", "developer", "me", "react"],
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
@@ -29,11 +20,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
     <html lang="en">
       <head />
       <body className="bg-gradient-to-tr from-[#eef5ff] to-[#f9ffeb] dark:from-[#141E30] dark:to-[#2a5298]">
-        <CustomThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-        >
+        <CustomThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div id="modal-root" />
           <div className="flex min-h-screen flex-col">
             <Navbar />

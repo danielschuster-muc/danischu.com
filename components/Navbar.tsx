@@ -42,8 +42,7 @@ const Navbar = () => {
         isSolid
           ? "bg-gradient-to-tr from-[#eef5ff] to-[#f9ffeb] opacity-95 shadow filter backdrop-blur-xl dark:from-[#141E30] dark:to-[#2a5298]"
           : ""
-      }`}
-    >
+      }`}>
       <div className="mr-6 flex flex-shrink-0 items-center">
         <span className="text-xl font-semibold tracking-tight">
           <Link href="/">Daniel Schuster</Link>
@@ -53,8 +52,7 @@ const Navbar = () => {
         <button
           type="button"
           className="inline-flex items-center justify-center rounded-md p-2"
-          onClick={toggleMenu}
-        >
+          onClick={toggleMenu}>
           <span className="sr-only">Open main menu</span>
           {menuOpen ? (
             <FiX className="block h-6 w-6" aria-hidden="true" />
@@ -66,15 +64,10 @@ const Navbar = () => {
       <div
         className={`${
           menuOpen ? "block" : "hidden"
-        } flex-grow-1 block w-full lg:flex lg:w-auto lg:items-center`}
-      >
+        } flex-grow-1 block w-full lg:flex lg:w-auto lg:items-center`}>
         <div className="text-sm lg:flex-grow">
           {links.map((link) => (
-            <a
-              key={link.name}
-              className="mt-4 ml-4 block lg:mt-0 lg:inline-block"
-              href={link.url}
-            >
+            <a key={link.name} className="mt-4 ml-4 block lg:mt-0 lg:inline-block" href={link.url}>
               {link.name}
             </a>
           ))}

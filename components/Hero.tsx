@@ -36,8 +36,7 @@ const Hero = () => {
       <h2
         className={`${
           isVisible ? "translate-x-0 opacity-100" : "-translate-x-4 opacity-0"
-        } transition-all duration-500 ease-in-out `}
-      >
+        } transition-all duration-500 ease-in-out `}>
         {word1}, {word2} & {word3}
       </h2>
     </header>

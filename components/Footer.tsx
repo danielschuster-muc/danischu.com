@@ -22,19 +22,13 @@ const Footer = () => {
     <footer className="z-10 flex shrink-0 flex-col items-center justify-between py-3 px-5 dark:bg-transparent md:flex-row">
       <div className="flex justify-center md:justify-start">
         <div className="">
-          <a
-            href="https://github.com/danielschuster-muc"
-            rel="noreferrer noopener"
-          >
+          <a href="https://github.com/danielschuster-muc" rel="noreferrer noopener">
             <span className="sr-only">GitHub</span>
             <FaGithub className="h-6 w-6" />
           </a>
         </div>
         <div className="mx-4">
-          <Link
-            href="https://www.linkedin.com/in/danielschuster-muc/"
-            rel="noopener noreferrer"
-          >
+          <Link href="https://www.linkedin.com/in/danielschuster-muc/" rel="noopener noreferrer">
             <span className="sr-only">LinkedIn</span>
             <FaLinkedin className="h-6 w-6" />
           </Link>
@@ -43,8 +37,7 @@ const Footer = () => {
           <select
             value={theme}
             onChange={handleThemeChange}
-            className="rounded-md border border-gray-300 dark:bg-[#141E30]"
-          >
+            className="rounded-md border border-gray-300 dark:bg-[#141E30]">
             <option value="dark" className="bg-gray-300 dark:bg-gray-900">
               Dark
             </option>
@@ -59,8 +52,7 @@ const Footer = () => {
       </div>
       <div className="my-4 text-center md:text-left">
         <p className="text-sm">
-          &copy; {new Date().getFullYear()} Daniel Schuster. All Rights
-          Reserved.
+          &copy; {new Date().getFullYear()} Daniel Schuster. All Rights Reserved.
         </p>
       </div>
       <div className="ml-4 text-center md:text-right">

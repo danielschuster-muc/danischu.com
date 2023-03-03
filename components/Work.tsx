@@ -22,8 +22,7 @@ const projects: ProjectType[] = [
   },
   {
     title: "Stack Overflown",
-    summary:
-      "If Stack Overflown was a website, it would be full of programming errors and typos.",
+    summary: "If Stack Overflown was a website, it would be full of programming errors and typos.",
     description:
       "I created Stack Overflown as a humorous take on Stack Overflow. Made with Vue.js, it surprises visitors who accidentally misspell the URL, by giving them random jokes and puns instead of the usual technical help.",
     images: [soImg.src],
@@ -33,8 +32,7 @@ const projects: ProjectType[] = [
   },
   {
     title: "Portfolio",
-    summary:
-      "A portfolio page about me, my work and my preferred technologies.",
+    summary: "A portfolio page about me, my work and my preferred technologies.",
     description:
       "My portfolio is a personal website that showcases my work and projects as well as tools and technologies I frequently use when coding. I built it with React + Next.js, and for the visual appealing I used Tailwind CSS.",
     images: [portfolioImg.src],
@@ -50,9 +48,7 @@ const Work = () => {
       <div className="bg-lime-50 py-20 dark:bg-blue-900 md:py-5">
         <div className="container mx-auto px-10">
           <div className="container p-10 text-center">
-            <h2 className="mb-2 text-4xl font-bold text-gray-700 dark:text-white">
-              Work.
-            </h2>
+            <h2 className="mb-2 text-4xl font-bold text-gray-700 dark:text-white">Work.</h2>
             <p>A selection of the best projects I did so far.</p>
           </div>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
