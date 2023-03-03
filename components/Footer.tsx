@@ -19,7 +19,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="shrink-0 z-10 flex flex-col md:flex-row items-center justify-between dark:bg-transparent py-3 px-5">
+    <footer className="z-10 flex shrink-0 flex-col items-center justify-between py-3 px-5 dark:bg-transparent md:flex-row">
       <div className="flex justify-center md:justify-start">
         <div className="">
           <a
@@ -28,7 +28,7 @@ const Footer = () => {
             rel="noreferrer"
           >
             <span className="sr-only">GitHub</span>
-            <FaGithub className="w-6 h-6" />
+            <FaGithub className="h-6 w-6" />
           </a>
         </div>
         <div className="mx-4">
@@ -38,14 +38,14 @@ const Footer = () => {
             rel="noreferrer"
           >
             <span className="sr-only">LinkedIn</span>
-            <FaLinkedin className="w-6 h-6" />
+            <FaLinkedin className="h-6 w-6" />
           </a>
         </div>
         <div className="mx-4">
           <select
             value={theme}
             onChange={handleThemeChange}
-            className="border border-gray-300 rounded-md dark:bg-[#141E30]"
+            className="rounded-md border border-gray-300 dark:bg-[#141E30]"
           >
             <option value="dark" className="bg-gray-300 dark:bg-gray-900">
               Dark
@@ -59,13 +59,13 @@ const Footer = () => {
           </select>
         </div>
       </div>
-      <div className="text-center md:text-left my-4">
+      <div className="my-4 text-center md:text-left">
         <p className="text-sm">
           &copy; {new Date().getFullYear()} Daniel Schuster. All Rights
           Reserved.
         </p>
       </div>
-      <div className="text-center md:text-right ml-4">
+      <div className="ml-4 text-center md:text-right">
         <p className="text-sm">
           <Link href="/legal-notice">Legal Notice</Link>
         </p>

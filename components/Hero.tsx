@@ -26,16 +26,16 @@ const Hero = () => {
   const word3 = words[(wordIndex + 2) % words.length];
 
   return (
-    <header className="h-screen w-full text-gray-700 dark:text-white flex flex-col items-center justify-center text-center">
-      <h1 className="text-5xl font-bold mb-4">
+    <header className="flex h-screen w-full flex-col items-center justify-center text-center text-gray-700 dark:text-white">
+      <h1 className="mb-4 text-5xl font-bold">
         Hello, I&apos;m{" "}
-        <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-green-400">
+        <span className="bg-gradient-to-r from-yellow-400 to-green-400 bg-clip-text text-transparent">
           Daniel Schuster.
         </span>
       </h1>
       <h2
         className={`${
-          isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"
+          isVisible ? "translate-x-0 opacity-100" : "-translate-x-4 opacity-0"
         } transition-all duration-500 ease-in-out `}
       >
         {word1}, {word2} & {word3}

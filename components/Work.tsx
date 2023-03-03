@@ -42,11 +42,11 @@ const Work = () => {
   return (
     <section id="work">
       <div
-        className="bg-lime-50 dark:bg-blue-900 py-20 md:py-5 transition duration-1500 ease-in-out"
+        className="duration-1500 bg-lime-50 py-20 transition ease-in-out dark:bg-blue-900 md:py-5"
         style={{ willChange: "transform" }}
       >
         <div className="container mx-auto px-10">
-          <div className="text-center p-10 container px-20 ">
+          <div className="container p-10 px-20 text-center ">
             <h2 className="text-4xl font-bold text-gray-700 dark:text-white">
               Work.
             </h2>
@@ -57,7 +57,7 @@ const Work = () => {
               alias.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project) => (
               <SingleProject key={project.title} project={project} />
             ))}

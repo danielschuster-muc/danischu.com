@@ -23,28 +23,28 @@ export default function Modal({
 
   return ReactDOM.createPortal(
     <div
-      className={`fixed inset-0 z-50 backdrop-blur-sm bg-gray-900 bg-opacity-90 transition-opacity transition-300 overflow-x-hidden overflow-y-auto flex justify-center items-center`}
+      className={`fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden bg-gray-900 bg-opacity-90 backdrop-blur-sm`}
       aria-labelledby={`Modal of ${title}`}
       role="dialog"
       aria-modal="true"
       onClick={handleClose}
     >
-      <div className="relative w-screen max-w-lg h-auto">
-        <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
-          <div className="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
+      <div className="relative h-auto w-screen max-w-xl">
+        <div className="relative rounded-lg bg-white shadow dark:bg-gray-700">
+          <div className="flex items-center justify-between rounded-t border-b p-5 dark:border-gray-600">
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
               {title}
             </h3>
             <button
               type="button"
-              className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+              className="ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"
               onClick={onClose}
             >
               <FiX className="block h-6 w-6" />
               <span className="sr-only">Close modal</span>
             </button>
           </div>
-          <div className="p-6 space-y-6">
+          <div className="space-y-6 p-6">
             <Image
               className="rounded-lg"
               src={image}

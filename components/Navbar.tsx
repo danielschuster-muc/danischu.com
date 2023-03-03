@@ -38,21 +38,21 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`sticky top-0 z-10 p-5 flex items-center justify-between flex-wrap ${
+      className={`sticky top-0 z-10 flex flex-wrap items-center justify-between p-5 ${
         isSolid
-          ? "shadow opacity-95 filter backdrop-blur-xl bg-gradient-to-tr from-[#eef5ff] to-[#f9ffeb] dark:from-[#141E30] dark:to-[#2a5298]"
+          ? "bg-gradient-to-tr from-[#eef5ff] to-[#f9ffeb] opacity-95 shadow filter backdrop-blur-xl dark:from-[#141E30] dark:to-[#2a5298]"
           : ""
       }`}
     >
-      <div className="flex items-center flex-shrink-0 mr-6">
-        <span className="font-semibold text-xl tracking-tight">
+      <div className="mr-6 flex flex-shrink-0 items-center">
+        <span className="text-xl font-semibold tracking-tight">
           <Link href="/">Daniel Schuster</Link>
         </span>
       </div>
       <div className="block lg:hidden">
         <button
           type="button"
-          className="inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+          className="inline-flex items-center justify-center rounded-md p-2"
           onClick={toggleMenu}
         >
           <span className="sr-only">Open main menu</span>
@@ -66,13 +66,13 @@ const Navbar = () => {
       <div
         className={`${
           menuOpen ? "block" : "hidden"
-        } w-full block flex-grow-1 lg:flex lg:items-center lg:w-auto`}
+        } flex-grow-1 block w-full lg:flex lg:w-auto lg:items-center`}
       >
         <div className="text-sm lg:flex-grow">
           {links.map((link) => (
             <a
               key={link.name}
-              className="block mt-4 lg:inline-block lg:mt-0 ml-4"
+              className="mt-4 ml-4 block lg:mt-0 lg:inline-block"
               href={link.url}
             >
               {link.name}

@@ -3,7 +3,7 @@ import React from "react";
 
 export default function LegalNotice() {
   return (
-    <div className="mt-5 container group mx-auto p-5 rounded ring-1 ring-slate-900/5 shadow-lg space-y-3 dark:bg-gray-900">
+    <div className="group container mx-auto mt-5 space-y-3 rounded p-5 shadow-lg ring-1 ring-slate-900/5 dark:bg-gray-900">
       <h1>Legal Notice</h1>
       <div>
         <h2>
@@ -24,7 +24,7 @@ export default function LegalNotice() {
           The European Commission provides a platform for online dispute
           resolution (ODR):{" "}
           <Link
-            className="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-gray-300 underline"
+            className="text-gray-700 underline hover:text-gray-900 dark:text-white dark:hover:text-gray-300"
             href="https://ec.europa.eu/consumers/odr"
           >
             https://ec.europa.eu/consumers/odr

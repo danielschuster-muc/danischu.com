@@ -35,8 +35,8 @@ const About = () => {
     <section id="about" className="pb-20">
       <div className="container mx-auto px-10">
         <div className="flex flex-col sm:flex-row md:space-x-4">
-          <div className="basis-1/3 flex flex-col text-center gap-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <div className="p-2 mx-5 mt-5 rounded-full bg-gradient-to-tr from-yellow-400 to-green-400 hover:p-3 hover:bg-gradient-to-r transition duration-500 ease-in-out">
+          <div className="flex basis-1/3 flex-col gap-4 rounded-lg border border-gray-200 bg-white text-center shadow dark:border-gray-700 dark:bg-gray-800">
+            <div className="mx-5 mt-5 rounded-full bg-gradient-to-tr from-yellow-400 to-green-400 p-2 transition duration-500 ease-in-out hover:bg-gradient-to-r hover:p-3">
               <Image
                 width="200"
                 height="200"
@@ -44,7 +44,7 @@ const About = () => {
                 alt="Portrait of Daniel"
                 priority
                 quality={100}
-                className="grayscale hover:grayscale-0 rounded-full h-full w-full"
+                className="h-full w-full rounded-full grayscale hover:grayscale-0"
               />
             </div>
             <div className="p-5">
@@ -57,7 +57,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="basis-2/3 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div className="basis-2/3 rounded-lg border border-gray-200 bg-white p-6 shadow dark:border-gray-700 dark:bg-gray-800">
             <h2 className="mb-2 text-4xl font-semibold tracking-tight text-gray-900 dark:text-white">
               About.
             </h2>
@@ -82,20 +82,20 @@ const About = () => {
               beatae impedit, placeat magni minima? Amet totam fugiat corrupti
               sit?
             </p>
-            <ol className="p-2 items-center sm:flex">
+            <ol className="items-center p-2 sm:flex">
               {events.map((e) => (
                 <li key={e.title} className="relative mb-6 sm:mb-0">
                   <div className="flex items-center">
-                    <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                      <FaCalendar className="w-3 h-3 text-blue-800 dark:text-blue-300" />
+                    <div className="z-10 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-100 ring-0 ring-white dark:bg-blue-900 dark:ring-gray-900 sm:ring-8">
+                      <FaCalendar className="h-3 w-3 text-blue-800 dark:text-blue-300" />
                     </div>
-                    <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                    <div className="hidden h-0.5 w-full bg-gray-200 dark:bg-gray-700 sm:flex"></div>
                   </div>
                   <div className="mt-3 sm:pr-8">
                     <h3 className="text-lg font-bold text-gray-900 dark:text-white">
                       {e.title}
                     </h3>
-                    <time className="block mb-2 text-sm font-normal leading-none text-gray-500 dark:text-gray-400">
+                    <time className="mb-2 block text-sm font-normal leading-none text-gray-500 dark:text-gray-400">
                       {e.date}
                     </time>
                     <p className="text-base font-normal text-gray-600 dark:text-gray-300">
