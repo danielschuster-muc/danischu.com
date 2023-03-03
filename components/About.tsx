@@ -60,25 +60,24 @@ const About = () => {
               About.
             </h2>
             <p className="mb-3 font-normal text-gray-500 dark:text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur doloribus aut veritatis nesciunt ipsum voluptates
-              aliquam ut minima commodi ad, earum odio alias voluptate beatae!
-              Esse, impedit! Omnis, reprehenderit labore. Sit necessitatibus eos
-              dicta sapiente dolores dignissimos repellat consectetur voluptate
-              rerum deserunt quis aliquid architecto incidunt voluptas, delectus
-              nihil illum pariatur assumenda iusto. Ex necessitatibus iusto
-              nostrum quae fugiat similique. Repellat fuga exercitationem
-              beatae, alias id ad eaque aspernatur eligendi rerum voluptatum
-              quisquam cum maiores culpa earum saepe natus, suscipit repudiandae
-              provident tempore at. Vero earum tenetur incidunt maiores qui!
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic enim
-              temporibus consectetur perferendis autem itaque laboriosam
-              explicabo labore. Consectetur facere similique dignissimos
-              voluptatem aliquid vel ipsa, voluptas maiores recusandae id! Neque
-              tempora odio atque ipsum distinctio omnis repellat molestiae,
-              inventore, fugiat quod minus labore incidunt sunt sed cum sint est
-              beatae impedit, placeat magni minima? Amet totam fugiat corrupti
-              sit?
+              I am currently studying Computer Science with a minor in Business
+              Administration at Ludwig-Maximilians-Universität in Munich. <br />
+              I have been passionate about technology and programming for a long
+              time. I have always loved creating things and started my
+              &quot;programming career&quot; with making small websites,
+              Minecraft modifications and Discord bots. <br />
+              After graduating from high school in July 2021, I participated in
+              a web development bootcamp at Le Wagon Munich. It was a very
+              intensive and interesting time where I learned a lot about web
+              development. Afterwards I did a 6-week software internship at
+              QAware GmbH, where I could peek into the work of professional
+              programming. <br />
+              During the gap between school and start of University I also went
+              to a language course to Valencia, Spain, and worked for a startup,
+              where I was responsible for developing the database and website.{" "}
+              <br />
+              Overall it has been an exciting journey so far for me and I am
+              excited to continue my studies and see where my career takes me.
             </p>
             <ol className="items-center p-2 sm:flex">
               {events.map((e) => (

@@ -83,9 +83,10 @@ const Tools = () => {
     <section id="tools" className="rounded-lg p-20">
       <div className="container mx-auto px-10">
         <div className="container p-10 text-center">
-          <h2 className="text-4xl font-bold text-gray-700 dark:text-white">
+          <h2 className="mb-2 text-4xl font-bold text-gray-700 dark:text-white">
             Tools.
           </h2>
+          <p>Technologies and Tools I frequently use</p>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {tools.map((t) => {

@@ -50,9 +50,10 @@ const Work = () => {
       <div className="bg-lime-50 py-20 dark:bg-blue-900 md:py-5">
         <div className="container mx-auto px-10">
           <div className="container p-10 text-center">
-            <h2 className="text-4xl font-bold text-gray-700 dark:text-white">
+            <h2 className="mb-2 text-4xl font-bold text-gray-700 dark:text-white">
               Work.
             </h2>
+            <p>The best projects I created so far</p>
           </div>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project) => (
