@@ -5,29 +5,29 @@ import { HiArrowRight } from "react-icons/hi";
 import ColoredBadge from "./ColoredBadge";
 import Modal from "./Modal";
 
-const colors = [
-  "amber",
-  "blue",
-  "cyan",
-  "emerald",
-  "fuchsia",
-  "green",
-  "indigo",
-  "lime",
-  "orange",
-  "pink",
-  "purple",
-  "red",
-  "rose",
-  "sky",
-  "teal",
-  "violet",
-  "yellow"
-];
-
 // TODO: link to gh and live preview / website
 export default function SingleProject({ project }: { project: ProjectType }) {
   const [showModal, setShowModal] = useState<boolean>(false);
+
+  let colors = [
+    "amber",
+    "blue",
+    "cyan",
+    "emerald",
+    "fuchsia",
+    "green",
+    "indigo",
+    "lime",
+    "orange",
+    "pink",
+    "purple",
+    "red",
+    "rose",
+    "sky",
+    "teal",
+    "violet",
+    "yellow",
+  ];
 
   return (
     <>
@@ -66,14 +66,16 @@ export default function SingleProject({ project }: { project: ProjectType }) {
         </div>
         <div className="mt-auto flex border-t p-5 dark:border-gray-600">
           {project.technologies.map((technology) => {
-            const randomColor =
-              colors[Math.floor(Math.random() * colors.length)];
+            const randomItem = colors.splice(
+              Math.floor(Math.random() * colors.length),
+              1
+            )[0];
 
             return (
               <ColoredBadge
                 key={technology}
                 technology={technology}
-                color={randomColor}
+                color={randomItem}
               />
             );
           })}
