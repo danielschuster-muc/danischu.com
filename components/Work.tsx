@@ -53,7 +53,7 @@ const Work = () => {
             <h2 className="mb-2 text-4xl font-bold text-gray-700 dark:text-white">
               Work.
             </h2>
-            <p>The best projects I created so far</p>
+            <p>A selection of the best projects I did so far.</p>
           </div>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project) => (
