@@ -2,11 +2,11 @@
 
 import React from "react";
 import SingleProject from "./SingleProject";
+import { ProjectType } from "@/additional";
 
 import pd1Img from "@/public/images/potterdb-1.jpg";
 import soImg from "@/public/images/stackoverflown.jpg";
 import portfolioImg from "@/public/images/portfolio-1.jpg";
-import { ProjectType } from "@/additional";
 
 const projects: ProjectType[] = [
   {

@@ -2,8 +2,30 @@ import { ProjectType } from "@/additional";
 import Image from "next/image";
 import React, { useState } from "react";
 import { HiArrowRight } from "react-icons/hi";
+import ColoredBadge from "./ColoredBadge";
 import Modal from "./Modal";
 
+const colors = [
+  "amber",
+  "blue",
+  "cyan",
+  "emerald",
+  "fuchsia",
+  "green",
+  "indigo",
+  "lime",
+  "orange",
+  "pink",
+  "purple",
+  "red",
+  "rose",
+  "sky",
+  "teal",
+  "violet",
+  "yellow"
+];
+
+// TODO: link to gh and live preview / website
 export default function SingleProject({ project }: { project: ProjectType }) {
   const [showModal, setShowModal] = useState<boolean>(false);
 
@@ -43,7 +65,18 @@ export default function SingleProject({ project }: { project: ProjectType }) {
           </button>
         </div>
         <div className="mt-auto flex border-t p-5 dark:border-gray-600">
-          {project.technologies.join(", ")}
+          {project.technologies.map((technology) => {
+            const randomColor =
+              colors[Math.floor(Math.random() * colors.length)];
+
+            return (
+              <ColoredBadge
+                key={technology}
+                technology={technology}
+                color={randomColor}
+              />
+            );
+          })}
         </div>
       </div>
     </>

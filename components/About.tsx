@@ -20,8 +20,6 @@ const events = [
   },
 ];
 
-// TODO: icons, link to gh and site
-
 const calcAge = (date: Date) => {
   var ms = Date.now() - date.getTime();
   var ageDate = new Date(ms);
