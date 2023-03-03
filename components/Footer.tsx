@@ -24,8 +24,7 @@ const Footer = () => {
         <div className="">
           <a
             href="https://github.com/danielschuster-muc"
-            target="_blank"
-            rel="noreferrer"
+            rel="noreferrer noopener"
           >
             <span className="sr-only">GitHub</span>
             <FaGithub className="h-6 w-6" />
@@ -34,8 +33,7 @@ const Footer = () => {
         <div className="mx-4">
           <a
             href="https://www.linkedin.com/in/danielschuster-muc/"
-            target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <span className="sr-only">LinkedIn</span>
             <FaLinkedin className="h-6 w-6" />
