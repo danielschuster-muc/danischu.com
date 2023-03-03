@@ -31,13 +31,13 @@ const Footer = () => {
           </a>
         </div>
         <div className="mx-4">
-          <a
+          <Link
             href="https://www.linkedin.com/in/danielschuster-muc/"
             rel="noopener noreferrer"
           >
             <span className="sr-only">LinkedIn</span>
             <FaLinkedin className="h-6 w-6" />
-          </a>
+          </Link>
         </div>
         <div className="mx-4">
           <select

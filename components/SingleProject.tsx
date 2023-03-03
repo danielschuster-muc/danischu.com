@@ -2,17 +2,12 @@ import { ProjectType } from "@/additional";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { FaGithub, FaLink } from "react-icons/fa";
 import { HiArrowRight } from "react-icons/hi";
 import ColoredBadge from "./ColoredBadge";
 import Modal from "./Modal";
 
 export default function SingleProject({ project }: { project: ProjectType }) {
   const [showModal, setShowModal] = useState<boolean>(false);
-
-  useEffect(() => {
-    // Wait for DOM to fully load before rendering component
-  }, []);
 
   let colors = [
     "amber",
@@ -45,7 +40,7 @@ export default function SingleProject({ project }: { project: ProjectType }) {
           description={project.description}
         />
       )}
-      <div className="flex flex-col flex-nowrap rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800">
+      <div className="flex flex-col rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800">
         <Image
           className="rounded-t-lg grayscale hover:grayscale-0"
           src={project.images[0]}
@@ -54,17 +49,15 @@ export default function SingleProject({ project }: { project: ProjectType }) {
           height="500"
           onClick={() => setShowModal(true)}
         />
-        <div className="m-5 flex flex-col">
-          <h3 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white inline-flex">
+        <div className="flex h-full flex-col justify-between p-5">
+          <h3 className="mb-2 block text-2xl font-semibold text-gray-900 dark:text-white">
             {project.title}
           </h3>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-200">
-            {project.summary}
-          </p>
-          <div className="mt-auto my-3 inline-flex">
+          <p className="text-gray-700 dark:text-gray-200">{project.summary}</p>
+          <div className="mt-3 flex flex-shrink items-center gap-2">
             <button
               onClick={() => setShowModal(true)}
-              className="inline-flex items-center rounded-lg mr-auto text-gray-900 bg-white border border-gray-300 hover:bg-gray-100 font-medium text-sm px-5 py-2.5 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600"
+              className="my-2 mr-auto inline-flex items-center rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700"
             >
               Read more
               <HiArrowRight className="ml-2" />
@@ -72,7 +65,7 @@ export default function SingleProject({ project }: { project: ProjectType }) {
             <Link
               href={project.source}
               rel="noopener noreferrer"
-              className="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-gray-300 mx-2 py-2"
+              className="p-2 text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-gray-300"
               title="Source"
             >
               <span className="sr-only">Source</span>
@@ -90,7 +83,7 @@ export default function SingleProject({ project }: { project: ProjectType }) {
             <Link
               href={project.website}
               rel="noopener noreferrer"
-              className="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-gray-300 py-2"
+              className="p-2 text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-gray-300"
               title="Website"
             >
               <span className="sr-only">Website</span>

@@ -32,7 +32,7 @@ const About = () => {
   return (
     <section id="about" className="pb-20">
       <div className="container mx-auto px-10">
-        <div className="flex flex-col sm:flex-row gap-4">
+        <div className="flex flex-col gap-4 sm:flex-row">
           <div className="flex basis-1/3 flex-col gap-4 rounded-lg border border-gray-200 bg-white text-center shadow dark:border-gray-700 dark:bg-gray-800">
             <div className="mx-5 mt-5 rounded-full bg-gradient-to-tr from-yellow-400 to-green-400 p-2 transition duration-500 ease-in-out hover:bg-gradient-to-r hover:p-3">
               <Image
