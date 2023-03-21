@@ -21,13 +21,13 @@ const Footer = () => {
   return (
     <footer className="z-10 flex shrink-0 flex-col items-center justify-between py-3 px-5 dark:bg-transparent md:flex-row">
       <div className="flex justify-center md:justify-start">
-        <div className="hover:scale-105 hover:text-gray-900 dark:hover:text-gray-300">
+        <div className="transition-all hover:scale-105 hover:text-gray-900 dark:hover:text-gray-300">
           <a href="https://github.com/danielschuster-muc" rel="noreferrer noopener">
             <span className="sr-only">GitHub</span>
             <FaGithub className="h-6 w-6" />
           </a>
         </div>
-        <div className="mx-4 hover:scale-105 hover:text-gray-900 dark:hover:text-gray-300">
+        <div className="mx-4 transition-all hover:scale-105 hover:text-gray-900 dark:hover:text-gray-300">
           <Link href="https://www.linkedin.com/in/danielschuster-muc/" rel="noopener noreferrer">
             <span className="sr-only">LinkedIn</span>
             <FaLinkedin className="h-6 w-6" />
@@ -56,7 +56,7 @@ const Footer = () => {
         </p>
       </div>
       <div className="ml-4 text-center md:text-right">
-        <p className="text-sm  hover:scale-105 hover:text-gray-900 dark:hover:text-gray-300">
+        <p className="text-sm transition-all hover:scale-105 hover:text-gray-900 dark:hover:text-gray-300">
           <Link href="/legal-notice">Legal Notice</Link>
         </p>
       </div>

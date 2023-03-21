@@ -57,7 +57,7 @@ export default function SingleProject({ project }: { project: ProjectType }) {
           <div className="mt-3 flex flex-shrink items-center gap-2">
             <button
               onClick={() => setShowModal(true)}
-              className="my-2 mr-auto inline-flex items-center rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700">
+              className="my-2 mr-auto inline-flex items-center rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-sm font-medium text-gray-900 transition-all hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700">
               Read more
               <HiArrowRight className="ml-2" />
             </button>

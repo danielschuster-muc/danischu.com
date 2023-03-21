@@ -42,7 +42,7 @@ const About = () => {
                 alt="Portrait of Daniel"
                 priority
                 quality={100}
-                className="h-full w-full rounded-full grayscale hover:grayscale-0"
+                className="h-full w-full rounded-full grayscale transition-all hover:grayscale-0"
               />
             </div>
             <div className="p-5">

@@ -92,7 +92,7 @@ const Tools = () => {
             return (
               <div
                 key={t.label}
-                className="inline-flex items-center justify-center rounded-lg border border-gray-200 bg-white px-5 py-2 text-center text-sm font-medium shadow hover:scale-105 dark:border-gray-700 dark:bg-gray-800">
+                className="inline-flex items-center justify-center rounded-lg border border-gray-200 bg-white px-5 py-2 text-center text-sm font-medium shadow transition-all hover:scale-105 dark:border-gray-700 dark:bg-gray-800">
                 <span className="mr-2 flex items-center justify-center">
                   <CustomIcon className="h-5 w-5" aria-label={t.label} />
                 </span>
