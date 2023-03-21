@@ -69,7 +69,7 @@ export default function SingleProject({ project }: { project: ProjectType }) {
               <span className="sr-only">Source</span>
               <svg
                 aria-hidden="true"
-                className="h-5 w-5 transition-all hover:scale-110"
+                className="h-5 w-5 transition-all hover:scale-105"
                 viewBox="0 0 496 512"
                 fill="currentColor"
                 height="1em"
@@ -85,7 +85,7 @@ export default function SingleProject({ project }: { project: ProjectType }) {
               <span className="sr-only">Website</span>
               <svg
                 aria-hidden="true"
-                className="h-5 w-5 transition-all hover:scale-110"
+                className="h-5 w-5 transition-all hover:scale-105"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

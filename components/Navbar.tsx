@@ -44,7 +44,7 @@ const Navbar = () => {
           : ""
       }`}>
       <div className="mr-6 flex flex-shrink-0 items-center">
-        <span className="text-xl font-semibold tracking-tight">
+        <span className="text-xl font-semibold tracking-tight hover:scale-105 hover:text-gray-900 dark:hover:text-gray-300">
           <Link href="/">Daniel Schuster</Link>
         </span>
       </div>
@@ -67,7 +67,10 @@ const Navbar = () => {
         } flex-grow-1 block w-full lg:flex lg:w-auto lg:items-center`}>
         <div className="text-sm lg:flex-grow">
           {links.map((link) => (
-            <a key={link.name} className="mt-4 ml-4 block lg:mt-0 lg:inline-block" href={link.url}>
+            <a
+              key={link.name}
+              className="mt-4 ml-4 block hover:scale-105 hover:text-gray-900 dark:hover:text-gray-300 lg:mt-0 lg:inline-block"
+              href={link.url}>
               {link.name}
             </a>
           ))}
