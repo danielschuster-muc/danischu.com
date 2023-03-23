@@ -9,10 +9,19 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: {
     default: "Home",
-    template: "%s | Daniel Schuster's Portfolio",
+    template: "%s | @danielschuster-muc's Portfolio",
   },
-  description: "Portfolio page by Daniel Schuster: about, projects & preferred technologies",
-  keywords: ["danielschuster", "portfolio", "programming", "website", "developer", "me", "react"],
+  description: "Portfolio of @danielschuster-muc: about, projects & preferred technologies",
+  keywords: [
+    "danielschuster",
+    "portfolio",
+    "programming",
+    "website",
+    "developer",
+    "me",
+    "react",
+    "danielschuster-muc",
+  ],
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {

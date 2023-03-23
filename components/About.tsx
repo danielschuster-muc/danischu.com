@@ -50,8 +50,7 @@ const About = () => {
                 Who is this guy?
               </h3>
               <p className="mb-3 font-normal text-gray-500 dark:text-gray-300">
-                I am Daniel, {age} years old, currently studying Computer Science in Munich,
-                Germany.
+                I am Daniel, a {age} y.o. Computer Science Student, based in Munich, Germany.
               </p>
             </div>
           </div>

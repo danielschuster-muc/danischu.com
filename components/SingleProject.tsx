@@ -102,7 +102,6 @@ export default function SingleProject({ project }: { project: ProjectType }) {
         <div className="mt-auto flex flex-wrap items-center gap-1 border-t p-5 dark:border-gray-600">
           {project.technologies.map((technology) => {
             const randomColor = colors.splice(Math.floor(Math.random() * colors.length), 1)[0];
-
             return <ColoredBadge key={technology} technology={technology} color={randomColor} />;
           })}
         </div>
