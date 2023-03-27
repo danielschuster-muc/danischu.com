@@ -24,16 +24,10 @@ export const metadata: Metadata = {
   ],
   icons: {
     apple: "/apple-touch-icon.png",
-    other: [
-      {
-        rel: "mstile",
-        url: "/mstile-150x150.png",
-      },
-      {
-        rel: "mask-icon",
-        url: "/safari-pinned-tab.svg",
-      },
-    ],
+    other: {
+      rel: "mask-icon",
+      url: "/safari-pinned-tab.svg",
+    },
   },
   colorScheme: "light dark",
   other: {
