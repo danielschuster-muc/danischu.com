@@ -38,6 +38,19 @@ export const metadata: Metadata = {
     { media: "(prefers-color-scheme: light)", color: "#254884" },
     { media: "(prefers-color-scheme: dark)", color: "#F7FDEE" },
   ],
+  openGraph: {
+    title: "@danielschuster-muc's Portfolio",
+    description: "Portfolio of @danielschuster-muc: about, projects & preferred technologies",
+    url: "https://danielschuster.me",
+    images: [
+      {
+        url: "https://danielschuster.me/api/og",
+        width: 800,
+        height: 600,
+      },
+    ],
+    type: "website",
+  },
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
