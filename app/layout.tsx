@@ -22,6 +22,28 @@ export const metadata: Metadata = {
     "react",
     "danielschuster-muc",
   ],
+  icons: {
+    apple: "/apple-touch-icon.png",
+    other: [
+      {
+        rel: "mstile",
+        url: "/mstile-150x150.png",
+      },
+      {
+        rel: "mask-icon",
+        url: "/safari-pinned-tab.svg",
+      },
+    ],
+  },
+  colorScheme: "light dark",
+  other: {
+    "msapplication-TileColor": "#254884",
+  },
+  manifest: "/manifest.json",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#254884" },
+    { media: "(prefers-color-scheme: dark)", color: "#F7FDEE" },
+  ],
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
