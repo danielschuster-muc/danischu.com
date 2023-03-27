@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     default: "Home",
     template: "%s | @danielschuster-muc's Portfolio",
   },
-  description: "Portfolio of @danielschuster-muc: about, projects & preferred technologies",
+  description: "Portfolio of @danielschuster-muc: about, projects & preferred tools",
   keywords: [
     "danielschuster",
     "portfolio",
@@ -39,17 +39,15 @@ export const metadata: Metadata = {
     { media: "(prefers-color-scheme: dark)", color: "#F7FDEE" },
   ],
   openGraph: {
-    title: "@danielschuster-muc's Portfolio",
-    description: "Portfolio of @danielschuster-muc: about, projects & preferred technologies",
-    url: "https://danielschuster.me",
+    title: "Daniel's Portfolio",
+    description: "Personal Portfolio: about, projects & preferred tools",
     images: [
       {
         url: "https://danielschuster.me/api/og",
-        width: 800,
-        height: 600,
+        width: 1200,
+        height: 630,
       },
     ],
-    type: "website",
   },
 };
 
