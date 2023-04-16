@@ -11,6 +11,8 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiMui,
+  SiGit,
+  SiGithub,
 } from "react-icons/si";
 import { DiJava, DiReact, DiRuby, DiSass } from "react-icons/di";
 import { FaVuejs } from "react-icons/fa";
@@ -45,16 +47,12 @@ const tools = [
     icon: SiTailwindcss,
   },
   {
-    label: "Svelte",
-    icon: SiSvelte,
+    label: "Git",
+    icon: SiGit,
   },
   {
-    label: "Vue.js",
-    icon: FaVuejs,
-  },
-  {
-    label: "Postgresql",
-    icon: SiPostgresql,
+    label: "GitHub",
+    icon: SiGithub,
   },
   {
     label: "HTML",
@@ -69,12 +67,24 @@ const tools = [
     icon: DiSass,
   },
   {
-    label: "Bootstrap",
-    icon: SiBootstrap,
+    label: "Svelte",
+    icon: SiSvelte,
+  },
+  {
+    label: "Vue.js",
+    icon: FaVuejs,
+  },
+  {
+    label: "PostgreSQL",
+    icon: SiPostgresql,
   },
   {
     label: "MUI",
     icon: SiMui,
+  },
+  {
+    label: "Bootstrap",
+    icon: SiBootstrap,
   },
 ];
 
