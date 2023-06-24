@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
   images: {
     remotePatterns: [
       {
@@ -10,12 +7,6 @@ const nextConfig = {
         hostname: "avatars.githubusercontent.com",
         port: "",
         pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "picsum.photos",
-        port: "",
-        pathname: "/**/**",
       },
     ],
   },

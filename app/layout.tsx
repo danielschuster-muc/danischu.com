@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     default: "Home",
     template: "%s | @danielschuster-muc's Portfolio",
   },
-  description: "Portfolio of @danielschuster-muc: about, projects & preferred tools",
+  description: "Portfolio of @danielschuster-muc: about, work & tools",
   keywords: [
     "danielschuster",
     "portfolio",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     description: "Personal Portfolio: about, projects & preferred tools",
     images: [
       {
-        url: "https://danischu.com/api/og",
+        url: "/api/og",
         width: 1200,
         height: 630,
       },
