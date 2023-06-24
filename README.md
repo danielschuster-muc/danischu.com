@@ -1,18 +1,32 @@
-# [Daniel's Portfolio](https://danischu.com)
+# danischu.com
 
-A portfolio page about me, my work and my preferred technologies.
+This is the GitHub repository for my personal portfolio website. Here you will find the source code and assets for my portfolio site.
 
-<details>
-  <summary>Screenshots</summary>
-  </br>
-  <table>
-    <tr>
-      <td>Dark Mode</td>
-      <td>Light Mode</td>
-    </tr>
-    <tr>
-      <td> <img src="https://user-images.githubusercontent.com/90754725/222852871-fdd0b1d2-00fe-4bb6-ad0c-45ba93c30522.jpg" title="Dark Mode" width="100%"> </td>
-      <td> <img src="https://user-images.githubusercontent.com/90754725/222852884-0dd62103-874f-4cc7-8297-242b4fa362e1.jpg" title="Light Mode" width="100%"> </td>
-    </tr>
-  </table>
-</details>
+## Live Website
+
+You can visit my portfolio website by clicking [here](https://danischu.com).
+
+## Built With
+
+- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## Features
+
+My portfolio website offers the following features:
+
+- **About**: A brief introduction to who I am and what I do.
+- **Work**: A showcase of my projects, including a description, a link to the live site, and a link to the GitHub repository.
+- **Tools**: A list of the tools and technologies I use.
+
+## Installation
+
+To run this project, install it locally using npm:
+
+```
+$ git clone https://github.com/danielschuster-muc/portfolio.git
+$ cd portfolio
+$ npm install
+$ npm run dev
+```
