@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     "me",
     "react",
     "danielschuster-muc",
+    "danischu",
   ],
   icons: {
     apple: "/apple-touch-icon.png",
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
     description: "Personal Portfolio: about, projects & preferred tools",
     images: [
       {
-        url: "https://danielschuster.me/api/og",
+        url: "https://danischu.com/api/og",
         width: 1200,
         height: 630,
       },

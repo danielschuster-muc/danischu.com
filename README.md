@@ -1,4 +1,4 @@
-# [Daniel's Portfolio](https://danielschuster.me)
+# [Daniel's Portfolio](https://danischu.com)
 
 A portfolio page about me, my work and my preferred technologies.
 

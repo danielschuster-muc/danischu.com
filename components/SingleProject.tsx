@@ -1,33 +1,13 @@
 import { ProjectType } from "@/additional";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { HiArrowRight } from "react-icons/hi";
 import ColoredBadge from "./ColoredBadge";
 import Modal from "./Modal";
 
 export default function SingleProject({ project }: { project: ProjectType }) {
   const [showModal, setShowModal] = useState<boolean>(false);
-
-  let colors = [
-    "amber",
-    "blue",
-    "cyan",
-    "emerald",
-    "fuchsia",
-    "green",
-    "indigo",
-    "lime",
-    "orange",
-    "pink",
-    "purple",
-    "red",
-    "rose",
-    "sky",
-    "teal",
-    "violet",
-    "yellow",
-  ];
 
   return (
     <>
@@ -101,8 +81,7 @@ export default function SingleProject({ project }: { project: ProjectType }) {
         </div>
         <div className="mt-auto flex flex-wrap items-center gap-1 border-t p-5 dark:border-gray-600">
           {project.technologies.map((technology) => {
-            const randomColor = colors.splice(Math.floor(Math.random() * colors.length), 1)[0];
-            return <ColoredBadge key={technology} technology={technology} color={randomColor} />;
+            return <ColoredBadge key={technology} technology={technology} />;
           })}
         </div>
       </div>

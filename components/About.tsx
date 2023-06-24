@@ -47,9 +47,9 @@ const About = () => {
               />
             </div>
             <div className="p-5">
-              <h3 className="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              <p className="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                 Who is this guy?
-              </h3>
+              </p>
               <p className="mb-3 font-normal text-gray-500 dark:text-gray-300">
                 I am Daniel, a {age} y.o. Computer Science Student, based in Munich, Germany.
               </p>
