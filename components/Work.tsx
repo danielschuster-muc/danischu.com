@@ -4,9 +4,9 @@ import React from "react";
 import SingleProject from "./SingleProject";
 import { ProjectType } from "@/additional";
 
-import pd1Img from "@/public/images/potterdb-1.jpg";
-import soImg from "@/public/images/stackoverflown.jpg";
-import portfolioImg from "@/public/images/portfolio-1.jpg";
+import potterdbImg from "@/public/images/potterdb.jpg";
+import stackoverflownImg from "@/public/images/stackoverflown.jpg";
+import portfolioImg from "@/public/images/portfolio.jpg";
 
 const projects: ProjectType[] = [
   {
@@ -15,7 +15,7 @@ const projects: ProjectType[] = [
       "An API with data from the Harry Potter Universe: Characters, Movies, Books, Spells and Potions.",
     description:
       "As a huge Harry Potter fan I always wanted to create a Harry Potter API, so I made one. It is built with Ruby on Rails + PostgreSQL for the API and Next.js for the website where users can search for data.The API itself provides a vast amount of data related to the Harry Potter Universe such as information on characters, movies, books, spells, and potions, making it a valuable resource for developers and fans of the series alike (such a me). Users can search for data using the DB Search function or access it via the API (REST or GraphQL).",
-    images: [pd1Img.src],
+    image: potterdbImg.src,
     technologies: ["react", "next.js", "ruby on rails", "mui"],
     source: "https://github.com/danielschuster-muc/potter-db",
     website: "https://potterdb.com",
@@ -25,7 +25,7 @@ const projects: ProjectType[] = [
     summary: "If Stack Overflown was a website, it would be full of programming errors and typos.",
     description:
       "I created Stack Overflown as a humorous take on Stack Overflow. Made with Vue.js, it surprises visitors who accidentally misspell the URL, by giving them random jokes and puns instead of the usual technical help.",
-    images: [soImg.src],
+    image: stackoverflownImg.src,
     technologies: ["vue.js", "css"],
     source: "https://github.com/danielschuster-muc/stackoverflown",
     website: "https://stackoverflown.com",
@@ -35,7 +35,7 @@ const projects: ProjectType[] = [
     summary: "A portfolio page about me, my work and my preferred technologies.",
     description:
       "My portfolio is a personal website that showcases my work and projects as well as tools and technologies I frequently use when coding. I built it with React + Next.js, and for the visual appealing I used Tailwind CSS.",
-    images: [portfolioImg.src],
+    image: portfolioImg.src,
     technologies: ["react", "next.js", "tailwindcss"],
     source: "https://github.com/danielschuster-muc/portfolio",
     website: "https://danischu.com",

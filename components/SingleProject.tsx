@@ -16,14 +16,14 @@ export default function SingleProject({ project }: { project: ProjectType }) {
           onClose={() => setShowModal(false)}
           isVisible={showModal}
           title={project.title}
-          image={project.images[0]}
+          image={project.image}
           description={project.description}
         />
       )}
       <div className="flex flex-col rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800">
         <Image
           className="rounded-t-lg grayscale hover:grayscale-0"
-          src={project.images[0]}
+          src={project.image}
           alt={`Image of ${project.title}`}
           width="500"
           height="500"
