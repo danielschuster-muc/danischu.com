@@ -1,24 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { FaCalendar } from "react-icons/fa";
-
-const events = [
-  {
-    title: "Web Development Bootcamp",
-    date: "October - December 2021",
-    description: "Le Wagon",
-  },
-  {
-    title: "Software Development Intern",
-    date: "January - February 2022",
-    description: "QAware",
-  },
-  {
-    title: "Computer Science Student",
-    date: "Since October 2022",
-    description: "LMU",
-  },
-];
 
 const calcAge = (date: Date) => {
   var ms = Date.now() - date.getTime();
@@ -61,9 +42,11 @@ const About = () => {
             </h2>
             <p className="mb-3 font-normal text-gray-500 dark:text-gray-300">
               I have been studying Computer Science with a minor in Business Administration at
-              Ludwig-Maximilians-Universität in Munich since October 2022. In addition, I am also
-              active member of the student initiative Enactus München e.V. in the Techdalo project,
-              which helps Colombian school graduates finding a job in IT. <br />
+              Ludwig-Maximilians-Universität in Munich since October 2022. Since September 2023 I
+              have been a working student at Siemens AG. In addition, I am also active member of the
+              student initiative Enactus München e.V. in the Techdalo project, which helps Colombian
+              school graduates finding a job in IT.
+              <br />
               Already during school I discovered my interest in programming, created my first small
               websites, developed Minecraft modifications and programmed Discord bots.
               <br />
@@ -79,27 +62,6 @@ const About = () => {
               database setup and data model creation & validation. Until the start of my studies I
               was helping out at the Münchner Tafel.
             </p>
-            <ol className="items-center p-2 sm:flex">
-              {events.map((e) => (
-                <li key={e.title} className="relative mb-6 sm:mb-0">
-                  <div className="flex items-center">
-                    <div className="z-10 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-100 ring-0 ring-white dark:bg-blue-900 dark:ring-gray-900 sm:ring-8">
-                      <FaCalendar className="h-3 w-3 text-blue-800 dark:text-blue-300" />
-                    </div>
-                    <div className="hidden h-0.5 w-full bg-gray-200 dark:bg-gray-700 sm:flex"></div>
-                  </div>
-                  <div className="mt-3 sm:pr-8">
-                    <h3 className="text-lg font-bold text-gray-900 dark:text-white">{e.title}</h3>
-                    <time className="mb-2 block text-sm font-normal leading-none text-gray-500 dark:text-gray-400">
-                      {e.date}
-                    </time>
-                    <p className="text-base font-normal text-gray-600 dark:text-gray-300">
-                      {e.description}
-                    </p>
-                  </div>
-                </li>
-              ))}
-            </ol>
           </div>
         </div>
       </div>

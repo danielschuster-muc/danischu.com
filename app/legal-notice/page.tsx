@@ -8,12 +8,6 @@ export default function LegalNotice() {
       <div>
         <h2>Information pursuant to section 5 of the German Telemedia Act (TMG)</h2>
         <p>Daniel Schuster</p>
-        <p>Felix-Fechenbach-Bogen 49</p>
-        <p>80797 Munich, Germany</p>
-      </div>
-      <div>
-        <h2>Contact</h2>
-        <p>Phone: +49 160XXXXXXX [On Request]</p>
         <p>Email: daniel.a.schuster@t-online.de</p>
       </div>
       <div>
