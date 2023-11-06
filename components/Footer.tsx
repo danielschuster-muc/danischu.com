@@ -19,7 +19,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="z-10 flex shrink-0 flex-col items-center justify-between py-3 px-5 dark:bg-transparent md:flex-row">
+    <footer className="z-10 flex shrink-0 flex-col items-center justify-between px-5 py-3 dark:bg-transparent md:flex-row">
       <div className="flex justify-center md:justify-start">
         <div className="transition-all hover:scale-105 hover:text-gray-900 dark:hover:text-gray-300">
           <a href="https://github.com/danielschuster-muc" rel="noreferrer noopener">
@@ -35,6 +35,7 @@ const Footer = () => {
         </div>
         <div className="mx-4">
           <select
+            aria-label="Select theme"
             value={theme}
             onChange={handleThemeChange}
             className="rounded-md border border-gray-300 dark:bg-[#141E30]">

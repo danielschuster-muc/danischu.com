@@ -34,6 +34,7 @@ export const metadata: Metadata = {
   other: {
     "msapplication-TileColor": "#254884",
   },
+  metadataBase: new URL("https://danischu.com/"),
   manifest: "/manifest.json",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#254884" },

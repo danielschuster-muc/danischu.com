@@ -95,7 +95,7 @@ const tools = [
 
 const Tools = () => {
   return (
-    <section id="tools" className="rounded-lg">
+    <section id="tools">
       <div className="py-20 md:py-5">
         <div className="container mx-auto px-10">
           <div className="container p-10 text-center">
