@@ -12,7 +12,7 @@ const age = calcAge(new Date(2003, 3, 23)); // why 23rd of April? Because it's m
 
 const About = () => {
   return (
-    <section id="about" className="pb-20">
+    <section id="about" className="pb-10">
       <div className="container mx-auto px-10">
         <div className="flex flex-col gap-4 sm:flex-row">
           <div className="flex basis-1/3 flex-col gap-4 rounded-lg border border-gray-200 bg-white text-center shadow dark:border-gray-700 dark:bg-gray-800">
