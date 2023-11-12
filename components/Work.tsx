@@ -16,7 +16,7 @@ const projects: ProjectType[] = [
     description:
       "As a huge Harry Potter fan I always wanted to create a Harry Potter API, so I made one. It is built with Ruby on Rails + PostgreSQL for the API and Next.js for the website where users can search for data.The API itself provides a vast amount of data related to the Harry Potter Universe such as information on characters, movies, books, spells, and potions, making it a valuable resource for developers and fans of the series alike (such a me). Users can search for data using the DB Search function or access it via the API (REST or GraphQL).",
     image: potterdbImg.src,
-    technologies: ["react", "next.js", "ruby on rails", "mui"],
+    technologies: ["react", "next.js", "ruby on rails", "tailwindcss"],
     source: "https://github.com/danielschuster-muc/potter-db",
     website: "https://potterdb.com",
   },
