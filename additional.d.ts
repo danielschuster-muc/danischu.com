@@ -1,6 +1,5 @@
 export type TechnologyType =
   | "css"
-  | "mui"
   | "next.js"
   | "react"
   | "ruby on rails"

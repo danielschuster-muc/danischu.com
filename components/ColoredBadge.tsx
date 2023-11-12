@@ -22,10 +22,9 @@ export default function ColoredBadge({ technology }: { technology: TechnologyTyp
     case "css":
       classes += "bg-violet-100 text-violet-800 dark:bg-violet-900 dark:text-violet-300";
       break;
-    case "mui":
-      classes += "bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-300";
-      break;
-
+    // case "indigo":
+    //   classes += "bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-300";
+    //   break;
     // more colors
     // case "emerald":
     //   classes += "bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-300";
