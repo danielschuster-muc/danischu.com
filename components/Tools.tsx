@@ -14,6 +14,7 @@ import {
   SiGit,
   SiGithub,
   SiRubyonrails,
+  SiPython,
 } from "react-icons/si";
 import { DiJava, DiReact, DiRuby, DiSass } from "react-icons/di";
 import { FaVuejs } from "react-icons/fa";
@@ -46,6 +47,10 @@ const tools = [
   {
     label: "Ruby on Rails",
     icon: SiRubyonrails,
+  },
+  {
+    label: "Python",
+    icon: SiPython,
   },
   {
     label: "HTML",
