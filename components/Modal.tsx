@@ -28,7 +28,7 @@ export default function Modal({
       role="dialog"
       aria-modal="true"
       onClick={handleClose}>
-      <div className="relative h-auto w-screen max-w-2xl">
+      <div className="relative h-auto w-screen max-w-3xl">
         <div className="relative rounded-lg bg-white shadow dark:bg-gray-700">
           <div className="flex items-center justify-between rounded-t border-b p-5 dark:border-gray-600">
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{title}</h3>
@@ -45,7 +45,7 @@ export default function Modal({
               className="rounded-lg"
               src={image}
               alt={`Image of ${title}`}
-              width="600"
+              width="800"
               height="600"
             />
             <p className="text-base text-gray-500 dark:text-gray-300">{description}</p>

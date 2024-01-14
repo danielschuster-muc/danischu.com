@@ -22,7 +22,7 @@ const projects: ProjectType[] = [
   },
   {
     title: "Stack Overflown",
-    summary: "If Stack Overflown was a website, it would be full of programming errors and typos.",
+    summary: "Where Developers Stumble, Mistype, & Learn Spelling",
     description:
       "I created Stack Overflown as a humorous take on Stack Overflow. Made with Vue.js, it surprises visitors who accidentally misspell the URL, by giving them random jokes and puns instead of the usual technical help.",
     image: stackoverflownImg.src,
