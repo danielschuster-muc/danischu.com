@@ -7,7 +7,6 @@ const calcAge = (date: Date) => {
   return Math.abs(ageDate.getUTCFullYear() - 1970);
 };
 
-// don't ask me why I'm using a date object here instead of a string, i just did it
 const age = calcAge(new Date(2003, 3, 23)); // why 23rd of April? Because it's my birthday! 🎉
 
 const About = () => {

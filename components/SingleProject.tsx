@@ -25,8 +25,8 @@ export default function SingleProject({ project }: { project: ProjectType }) {
           className="rounded-t-lg grayscale hover:grayscale-0"
           src={project.image}
           alt={`Image of ${project.title}`}
-          width="500"
-          height="500"
+          width="800"
+          height="600"
           onClick={() => setShowModal(true)}
         />
         <div className="flex h-full flex-col justify-between p-5">
