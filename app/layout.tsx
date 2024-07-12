@@ -4,7 +4,15 @@ import Navbar from "@/components/Navbar";
 
 import "./globals.css";
 
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#254884" },
+    { media: "(prefers-color-scheme: dark)", color: "#F7FDEE" },
+  ],
+  colorScheme: "light dark",
+};
 
 export const metadata: Metadata = {
   title: {
@@ -30,16 +38,11 @@ export const metadata: Metadata = {
       url: "/safari-pinned-tab.svg",
     },
   },
-  colorScheme: "light dark",
   other: {
     "msapplication-TileColor": "#254884",
   },
   metadataBase: new URL("https://danischu.com/"),
   manifest: "/manifest.json",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#254884" },
-    { media: "(prefers-color-scheme: dark)", color: "#F7FDEE" },
-  ],
   openGraph: {
     title: "Daniel's Portfolio",
     description: "Personal Portfolio: about, projects & preferred tools",
