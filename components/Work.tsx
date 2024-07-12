@@ -48,8 +48,8 @@ const Work = () => {
       <div className="py-20 md:py-5">
         <div className="container mx-auto px-10">
           <div className="container p-10 text-center">
-            <h2 className="mb-2 text-4xl font-bold text-gray-700 dark:text-white">Work.</h2>
-            <p>A selection of the best projects I have done so far.</p>
+            <h2 className="mb-2 text-4xl font-bold text-gray-700 dark:text-white">Projects.</h2>
+            <p>A selection of the projects I have worked on.</p>
           </div>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project) => (
