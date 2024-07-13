@@ -69,7 +69,7 @@ const Navbar = () => {
           {links.map((link) => (
             <a
               key={link.name}
-              className="mt-4 ml-4 block transition-all hover:scale-105 hover:text-gray-900 dark:hover:text-gray-300 lg:mt-0 lg:inline-block"
+              className="ml-4 mt-4 block hover:text-gray-600 hover:underline dark:hover:text-gray-300 lg:mt-0 lg:inline-block"
               href={link.url}>
               {link.name}
             </a>
