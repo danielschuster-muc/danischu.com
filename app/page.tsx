@@ -1,12 +1,12 @@
 import Hero from "@/components/Hero";
 import Tools from "@/components/Tools";
-import Work from "@/components/Work";
+import Projects from "@/components/Projects";
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <Work />
+      <Projects />
       <Tools />
     </>
   );

@@ -4,34 +4,33 @@ export default function ColoredBadge({ technology }: { technology: TechnologyTyp
   let classes: string = "px-2 py-1 text-sm font-medium rounded ";
 
   switch (technology) {
-    case "next.js":
+    case "Next.js":
       classes += "bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-300";
       break;
-    case "react":
-      classes += "bg-cyan-100 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-300";
-      break;
-    case "tailwindcss":
+    case "Tailwind CSS":
       classes += "bg-fuchsia-100 text-fuchsia-800 dark:bg-fuchsia-900 dark:text-fuchsia-300";
       break;
-    case "vue.js":
+    case "Vue.js":
       classes += "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300";
       break;
-    case "ruby on rails":
+    case "Ruby on Rails":
       classes += "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300";
       break;
-    case "css":
+    case "CSS":
       classes += "bg-violet-100 text-violet-800 dark:bg-violet-900 dark:text-violet-300";
       break;
-    // case "indigo":
-    //   classes += "bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-300";
-    //   break;
-    // more colors
-    // case "emerald":
-    //   classes += "bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-300";
-    //   break;
-    // case "lime":
-    //   classes += "bg-lime-100 text-lime-800 dark:bg-lime-900 dark:text-lime-300";
-    //   break;
+    case "Java":
+      classes += "bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-300";
+      break;
+    case "Firebase":
+      classes += "bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-300";
+      break;
+    case "PostgreSQL":
+      classes += "bg-lime-100 text-lime-800 dark:bg-lime-900 dark:text-lime-300";
+      break;
+    case "shadcn/ui":
+      classes += "bg-cyan-100 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-300";
+      break;
     // case "orange":
     //   classes += "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300";
     //   break;
