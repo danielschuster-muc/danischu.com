@@ -2,7 +2,6 @@ import React from "react";
 
 import { IoLogoJavascript } from "react-icons/io";
 import {
-  SiBootstrap,
   SiCss3,
   SiHtml5,
   SiNextdotjs,
@@ -10,7 +9,6 @@ import {
   SiSvelte,
   SiTailwindcss,
   SiTypescript,
-  SiMui,
   SiGit,
   SiGithub,
   SiRubyonrails,
