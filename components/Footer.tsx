@@ -57,7 +57,7 @@ const Footer = () => {
         </p>
       </div>
       <div className="ml-4 text-center md:text-right">
-        <p className="text-sm transition-all hover:scale-105 hover:text-gray-900 dark:hover:text-gray-300">
+        <p className="text-sm hover:text-gray-600 hover:underline dark:hover:text-gray-300">
           <Link href="/legal-notice">Legal Notice</Link>
         </p>
       </div>

@@ -1,10 +1,14 @@
 export type TechnologyType =
-  | "css"
-  | "next.js"
-  | "react"
-  | "ruby on rails"
-  | "tailwindcss"
-  | "vue.js";
+  | "CSS"
+  | "Next.js"
+  | "React"
+  | "Ruby on Rails"
+  | "Tailwind CSS"
+  | "Vue.js"
+  | "Java"
+  | "Firebase"
+  | "shadcn/ui"
+  | "PostgreSQL";
 
 export type ProjectType = {
   title: string;
@@ -12,6 +16,6 @@ export type ProjectType = {
   description: string;
   image: string;
   technologies: TechnologyType[];
-  source: string;
+  source?: string;
   website: string;
 };

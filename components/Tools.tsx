@@ -2,7 +2,6 @@ import React from "react";
 
 import { IoLogoJavascript } from "react-icons/io";
 import {
-  SiBootstrap,
   SiCss3,
   SiHtml5,
   SiNextdotjs,
@@ -10,11 +9,11 @@ import {
   SiSvelte,
   SiTailwindcss,
   SiTypescript,
-  SiMui,
   SiGit,
   SiGithub,
   SiRubyonrails,
   SiPython,
+  SiFirebase,
 } from "react-icons/si";
 import { DiJava, DiReact, DiRuby, DiSass } from "react-icons/di";
 import { FaVuejs } from "react-icons/fa";
@@ -73,10 +72,6 @@ const tools = [
     icon: SiGithub,
   },
   {
-    label: "Sass",
-    icon: DiSass,
-  },
-  {
     label: "Svelte",
     icon: SiSvelte,
   },
@@ -89,12 +84,8 @@ const tools = [
     icon: SiPostgresql,
   },
   {
-    label: "MUI",
-    icon: SiMui,
-  },
-  {
-    label: "Bootstrap",
-    icon: SiBootstrap,
+    label: "Firebase",
+    icon: SiFirebase,
   },
 ];
 
