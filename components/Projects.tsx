@@ -30,7 +30,7 @@ const projects: ProjectType[] = [
     title: "Portfolio",
     summary: "A personal portfolio showcasing my projects and preferred technologies.",
     description:
-      "This portfolio website is a showcase of my work, projects, and the tools and technologies I frequently use in development. Built with React and Next.js, styled with Tailwind CSS for a clean and responsive design.",
+      "This portfolio website is a showcase of projects I have worked on, as well as tools and technologies I frequently use in development. Built with React and Next.js, styled with Tailwind CSS for a clean and responsive design.",
     image: "/images/portfolio.jpg",
     technologies: ["Next.js", "Tailwind CSS"],
     source: "https://github.com/danielschuster-muc/portfolio",

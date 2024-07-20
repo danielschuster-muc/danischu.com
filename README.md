@@ -17,7 +17,7 @@ You can visit my portfolio website by clicking [here](https://danischu.com).
 My portfolio website offers the following features:
 
 - **About**: A brief introduction to who I am and what I do.
-- **Work**: A showcase of my projects, including a description, a link to the live site, and a link to the GitHub repository.
+- **Projects**: A showcase of my projects, including a description, a link to the live site, and a link to the GitHub repository.
 - **Tools**: A list of the tools and technologies I use.
 
 ## Installation 🔧

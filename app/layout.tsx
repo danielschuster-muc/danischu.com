@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     default: "Home",
     template: "%s | @danielschuster-muc's Portfolio",
   },
-  description: "Portfolio of @danielschuster-muc: about, work & tools",
+  description: "Portfolio of @danielschuster-muc: about, projects & tools",
   keywords: [
     "danielschuster",
     "portfolio",
