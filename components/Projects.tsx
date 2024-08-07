@@ -32,7 +32,7 @@ const projects: ProjectType[] = [
       "A university project on computer vision and deep learning, focusing on face detection and emotion recognition.",
     description:
       "As part of a university course, our team of 4 developed a face detection and emotion recognition project using Python and PyTorch. The system classifies six emotions, e.g. happiness, anger, and sadness, and detects faces using RFBNet. We pre-trained our emotion recognition model on the AffectNet dataset and fine-tuned it on the RAF-DB dataset, achieving a top-1 accuracy of 71.6 % and a top-3 accuracy of 94.2 % on the given validation set.",
-    image: "/images/apron.jpg",
+    image: "/images/cv_dl.jpg",
     technologies: ["Python", "PyTorch"],
   },
   {
