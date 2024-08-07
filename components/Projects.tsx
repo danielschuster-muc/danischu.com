@@ -27,6 +27,15 @@ const projects: ProjectType[] = [
     website: "https://techdalo.com",
   },
   {
+    title: "CV & DL Project",
+    summary:
+      "A university project on computer vision and deep learning, focusing on face detection and emotion recognition.",
+    description:
+      "As part of a university course, our team of 4 developed a face detection and emotion recognition project using Python and PyTorch. The system classifies six emotions, e.g. happiness, anger, and sadness, and detects faces using RFBNet. We pre-trained our emotion recognition model on the AffectNet dataset and fine-tuned it on the RAF-DB dataset, achieving a top-1 accuracy of 71.6 % and a top-3 accuracy of 94.2 % on the given validation set.",
+    image: "/images/cv_dl.jpg",
+    technologies: ["Python", "PyTorch"],
+  },
+  {
     title: "Portfolio",
     summary: "A personal portfolio showcasing my projects and preferred technologies.",
     description:
@@ -37,16 +46,6 @@ const projects: ProjectType[] = [
     website: "https://danischu.com",
   },
   {
-    title: "Stack Overflown",
-    summary: "Where Developers Stumble, Mistype, & Learn Spelling",
-    description:
-      "Stack Overflown is a playful twist on the familiar Stack Overflow platform. Users who misspell the URL are greeted with random jokes and puns, adding a lighthearted touch to the developer community. Built with Vue.js and styled with simple CSS.",
-    image: "/images/stackoverflown.jpg",
-    technologies: ["Vue.js", "CSS"],
-    source: "https://github.com/danielschuster-muc/stackoverflown",
-    website: "https://stackoverflown.com",
-  },
-  {
     title: "Void Totem Mod",
     summary: "A Minecraft mod introducing a new totem that prevents you from dying in the void.",
     description:
@@ -55,6 +54,16 @@ const projects: ProjectType[] = [
     technologies: ["Java"],
     source: "https://github.com/affehund/voidtotem",
     website: "https://curseforge.com/minecraft/mc-mods/voidtotem",
+  },
+  {
+    title: "Stack Overflown",
+    summary: "Where Developers Stumble, Mistype, & Learn Spelling",
+    description:
+      "Stack Overflown is a playful twist on the familiar Stack Overflow platform. Users who misspell the URL are greeted with random jokes and puns, adding a lighthearted touch to the developer community. Built with Vue.js and styled with simple CSS.",
+    image: "/images/stackoverflown.jpg",
+    technologies: ["Vue.js", "CSS"],
+    source: "https://github.com/danielschuster-muc/stackoverflown",
+    website: "https://stackoverflown.com",
   },
 ];
 
