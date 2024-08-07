@@ -8,7 +8,9 @@ export type TechnologyType =
   | "Java"
   | "Firebase"
   | "shadcn/ui"
-  | "PostgreSQL";
+  | "PostgreSQL"
+  | "Python"
+  | "PyTorch";
 
 export type ProjectType = {
   title: string;
@@ -17,5 +19,5 @@ export type ProjectType = {
   image: string;
   technologies: TechnologyType[];
   source?: string;
-  website: string;
+  website?: string;
 };

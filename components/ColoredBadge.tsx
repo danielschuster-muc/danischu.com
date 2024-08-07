@@ -31,12 +31,12 @@ export default function ColoredBadge({ technology }: { technology: TechnologyTyp
     case "shadcn/ui":
       classes += "bg-cyan-100 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-300";
       break;
-    // case "orange":
-    //   classes += "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300";
-    //   break;
-    // case "pink":
-    //   classes += "bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-300";
-    //   break;
+    case "Python":
+      classes += "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300";
+      break;
+    case "PyTorch":
+      classes += "bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-300";
+      break;
     // case "purple":
     //   classes += "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300";
     //   break;
