@@ -8,7 +8,7 @@ export default function LegalNotice() {
       <div>
         <h2>Information pursuant to section 5 of the German Telemedia Act (TMG)</h2>
         <p>Daniel Schuster</p>
-        <p>Email: contact@danischu.com</p>
+        <p>Email: hello[at]danischu.com</p>
       </div>
       <div>
         <h2>EU dispute resolution</h2>
