@@ -30,12 +30,6 @@ const Hero = () => {
               danielschuster-muc
             </span>
           </a>
-          <a href="mailto:contact@danischu.com" className="flex items-center">
-            <FaEnvelope className="mr-2" />
-            <span className="hover:text-gray-600 hover:underline dark:hover:text-gray-300">
-              contact@danischu.com
-            </span>
-          </a>
         </div>
       </div>
       <div className="relative hidden items-center justify-end lg:flex lg:w-1/2">
