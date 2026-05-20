@@ -1,8 +1,5 @@
-"use client";
-
-import React from "react";
 import SingleProject from "./SingleProject";
-import { ProjectType } from "@/additional";
+import { ProjectType } from "@/types";
 
 const projects: ProjectType[] = [
   {
@@ -49,7 +46,7 @@ const projects: ProjectType[] = [
     title: "Void Totem Mod",
     summary: "A Minecraft mod introducing a new totem that prevents you from dying in the void.",
     description:
-      "The Void Totem Mod is a Minecraft modification that adds a new totem to the game that prevents players from death in the void. Developed in Java, this mod reached over 30 million downloads on CurseForge for its Forge and Fabric versions.",
+      "The Void Totem Mod is a Minecraft modification that adds a new totem to the game that prevents players from death in the void. Developed in Java, this mod reached over 40 million downloads on CurseForge for its Forge and Fabric versions.",
     image: "/images/voidtotem.jpg",
     technologies: ["Java"],
     source: "https://github.com/affehund/voidtotem",
@@ -73,7 +70,7 @@ const Projects = () => {
       <div className="py-20 md:py-5">
         <div className="container mx-auto px-10">
           <div className="container p-10 text-center">
-            <h2 className="mb-2 text-4xl font-bold text-gray-700 dark:text-white">Projects.</h2>
+            <h2 className="mb-2 text-4xl font-bold text-gray-700">Projects.</h2>
             <p>A selection of projects I have worked on.</p>
           </div>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">

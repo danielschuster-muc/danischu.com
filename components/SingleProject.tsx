@@ -1,7 +1,9 @@
-import { ProjectType } from "@/additional";
+"use client";
+
+import { ProjectType } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaArrowRight, FaGithub } from "react-icons/fa";
 import ColoredBadge from "./ColoredBadge";
 import Modal from "./Modal";
@@ -20,7 +22,7 @@ export default function SingleProject({ project }: { project: ProjectType }) {
           description={project.description}
         />
       )}
-      <div className="flex flex-col rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800">
+      <div className="flex flex-col rounded-lg border border-gray-200 bg-white shadow">
         <Image
           className="rounded-t-lg grayscale transition-all hover:grayscale-0"
           src={project.image}
@@ -30,14 +32,14 @@ export default function SingleProject({ project }: { project: ProjectType }) {
           onClick={() => setShowModal(true)}
         />
         <div className="flex h-full flex-col justify-between p-5">
-          <h3 className="mb-2 block text-2xl font-semibold text-gray-900 dark:text-white">
+          <h3 className="mb-2 block text-2xl font-semibold text-gray-900">
             {project.title}
           </h3>
-          <p className="text-gray-700 dark:text-gray-200">{project.summary}</p>
-          <div className="mt-3 flex flex-shrink items-center gap-2">
+          <p className="text-gray-700">{project.summary}</p>
+          <div className="mt-3 flex shrink items-center gap-2">
             <button
               onClick={() => setShowModal(true)}
-              className="my-2 mr-auto inline-flex items-center rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-sm font-medium text-gray-900 transition-all hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700">
+              className="my-2 mr-auto inline-flex items-center rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-sm font-medium text-gray-900 transition-all hover:bg-gray-100">
               Read more
               <FaArrowRight className="ml-2" />
             </button>
@@ -45,7 +47,7 @@ export default function SingleProject({ project }: { project: ProjectType }) {
               <Link
                 href={project.source}
                 rel="noopener noreferrer"
-                className="p-2 text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-gray-300"
+                className="p-2 text-gray-700 hover:text-gray-900"
                 title="Source">
                 <span className="sr-only">Source</span>
                 <FaGithub className="h-5 w-5 transition-all hover:scale-105" />
@@ -55,7 +57,7 @@ export default function SingleProject({ project }: { project: ProjectType }) {
               <Link
                 href={project.website}
                 rel="noopener noreferrer"
-                className="p-2 text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-gray-300"
+                className="p-2 text-gray-700 hover:text-gray-900"
                 title="Website">
                 <span className="sr-only">Website</span>
                 <svg
@@ -75,7 +77,7 @@ export default function SingleProject({ project }: { project: ProjectType }) {
             )}
           </div>
         </div>
-        <div className="mt-auto flex flex-wrap items-center gap-1 border-t p-5 dark:border-gray-600">
+        <div className="mt-auto flex flex-wrap items-center gap-1 border-t border-gray-200 p-5">
           {project.technologies.map((technology) => {
             return <ColoredBadge key={technology} technology={technology} />;
           })}
