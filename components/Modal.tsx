@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import ReactDOM from "react-dom";
 import { FiX } from "react-icons/fi";

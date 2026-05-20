@@ -1,7 +1,5 @@
-"use client";
-
 import Image from "next/image";
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Hero = () => {
   return (

@@ -1,5 +1,3 @@
-"use client";
-
 import SingleProject from "./SingleProject";
 import { ProjectType } from "@/types";
 
