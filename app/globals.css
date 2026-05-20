@@ -1,15 +1,16 @@
-@tailwind base;
+@import "tailwindcss";
+
 @layer base {
   h1 {
-    @apply text-2xl;
+    font-size: 1.5rem; /* equivalent to Tailwind text-2xl */
+    line-height: 2rem;
   }
   h2 {
-    @apply text-xl;
+    font-size: 1.25rem; /* equivalent to Tailwind text-xl */
+    line-height: 1.75rem;
   }
   h3 {
-    @apply text-lg;
+    font-size: 1.125rem; /* equivalent to Tailwind text-lg */
+    line-height: 1.75rem;
   }
 }
-
-@tailwind components;
-@tailwind utilities;

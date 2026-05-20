@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import ReactDOM from "react-dom";
 import { FiX } from "react-icons/fi";
 
@@ -23,18 +22,18 @@ export default function Modal({
 
   return ReactDOM.createPortal(
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden bg-gray-900 bg-opacity-90 backdrop-blur-sm`}
+      className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden bg-gray-900/90 backdrop-blur-sm"
       aria-labelledby={`Modal of ${title}`}
       role="dialog"
       aria-modal="true"
       onClick={handleClose}>
       <div className="relative h-auto w-screen max-w-3xl">
-        <div className="relative rounded-lg bg-white shadow dark:bg-gray-700">
-          <div className="flex items-center justify-between rounded-t border-b p-5 dark:border-gray-600">
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{title}</h3>
+        <div className="relative rounded-lg bg-white shadow">
+          <div className="flex items-center justify-between rounded-t border-b border-gray-200 p-5">
+            <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
             <button
               type="button"
-              className="ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"
+              className="ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
               onClick={onClose}>
               <FiX className="block h-6 w-6" />
               <span className="sr-only">Close modal</span>
@@ -48,7 +47,7 @@ export default function Modal({
               width="800"
               height="600"
             />
-            <p className="text-base text-gray-500 dark:text-gray-300">{description}</p>
+            <p className="text-base text-gray-500">{description}</p>
           </div>
         </div>
       </div>
