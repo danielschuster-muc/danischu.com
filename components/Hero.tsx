@@ -11,22 +11,16 @@ const Hero = () => {
           <h1 className="mb-6 bg-linear-to-r from-yellow-400 to-green-400 bg-clip-text text-6xl font-bold text-transparent">
             Daniel Schuster
           </h1>
-          <h2 className="text-2xl text-gray-600">
-            Computer Science Student at LMU, Munich
-          </h2>
+          <h2 className="text-2xl text-gray-600">Computer Science Student from Munich, Germany</h2>
         </div>
         <div className="flex flex-col space-y-1 text-lg">
           <a href="https://github.com/danielschuster-muc" className="flex items-center">
             <FaGithub className="mr-2" />
-            <span className="hover:text-gray-600 hover:underline">
-              danielschuster-muc
-            </span>
+            <span className="hover:text-gray-600 hover:underline">danielschuster-muc</span>
           </a>
           <a href="https://linkedin.com/in/danielschuster-muc" className="flex items-center">
             <FaLinkedin className="mr-2" />
-            <span className="hover:text-gray-600 hover:underline">
-              danielschuster-muc
-            </span>
+            <span className="hover:text-gray-600 hover:underline">danielschuster-muc</span>
           </a>
         </div>
       </div>
