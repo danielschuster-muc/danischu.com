@@ -14,6 +14,26 @@ const projects: ProjectType[] = [
     website: "https://potterdb.com",
   },
   {
+    title: "Portfolio",
+    summary: "A personal portfolio showcasing my projects and preferred technologies.",
+    description:
+      "This portfolio website is a showcase of projects I have worked on, as well as tools and technologies I frequently use in development. Built with React and Next.js, styled with Tailwind CSS for a clean and responsive design.",
+    image: "/images/portfolio.jpg",
+    technologies: ["Next.js", "Tailwind CSS"],
+    source: "https://github.com/danielschuster-muc/portfolio",
+    website: "https://danischu.com",
+  },
+  {
+    title: "Void Totem Mod",
+    summary: "A Minecraft mod introducing a new totem that prevents you from dying in the void.",
+    description:
+      "The Void Totem Mod is a Minecraft modification that adds a new totem to the game that prevents players from death in the void. Developed for the Java Edition of Minecraft, this mod reached over 50 million downloads across various platforms and mod loaders.",
+    image: "/images/voidtotem.jpg",
+    technologies: ["Java"],
+    source: "https://github.com/affehund/voidtotem",
+    website: "https://curseforge.com/minecraft/mc-mods/voidtotem",
+  },
+  {
     title: "Techdalo Website",
     summary:
       "The official website of Techdalo, a social startup that enables Colombian students to pursue a career in tech.",
@@ -31,26 +51,6 @@ const projects: ProjectType[] = [
       "As part of a university course, our team of 4 developed a face detection and emotion recognition project using Python and PyTorch. The system classifies six emotions, e.g. happiness, anger, and sadness, and detects faces using RFBNet. We pre-trained our emotion recognition model on the AffectNet dataset and fine-tuned it on the RAF-DB dataset, achieving a top-1 accuracy of 71.6 % and a top-3 accuracy of 94.2 % on the given validation set.",
     image: "/images/cv_dl.jpg",
     technologies: ["Python", "PyTorch"],
-  },
-  {
-    title: "Portfolio",
-    summary: "A personal portfolio showcasing my projects and preferred technologies.",
-    description:
-      "This portfolio website is a showcase of projects I have worked on, as well as tools and technologies I frequently use in development. Built with React and Next.js, styled with Tailwind CSS for a clean and responsive design.",
-    image: "/images/portfolio.jpg",
-    technologies: ["Next.js", "Tailwind CSS"],
-    source: "https://github.com/danielschuster-muc/portfolio",
-    website: "https://danischu.com",
-  },
-  {
-    title: "Void Totem Mod",
-    summary: "A Minecraft mod introducing a new totem that prevents you from dying in the void.",
-    description:
-      "The Void Totem Mod is a Minecraft modification that adds a new totem to the game that prevents players from death in the void. Developed in Java, this mod reached over 40 million downloads on CurseForge for its Forge and Fabric versions.",
-    image: "/images/voidtotem.jpg",
-    technologies: ["Java"],
-    source: "https://github.com/affehund/voidtotem",
-    website: "https://curseforge.com/minecraft/mc-mods/voidtotem",
   },
   {
     title: "Stack Overflown",
